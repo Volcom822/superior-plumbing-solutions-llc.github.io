@@ -5,50 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Superior Plumbing Solutions, LLC</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
       background-color: #f4f4f4;
-      text-align: center;
     }
     header {
       background-color: #003344;
       color: white;
-      padding: 20px 10px;
+      text-align: center;
+      padding: 20px;
+    }
+    .menu-btn {
+      display: none;
+      font-size: 28px;
+      color: white;
+      background: none;
+      border: none;
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      cursor: pointer;
     }
     nav {
       background-color: #f7941d;
-      padding: 10px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
     }
     nav a {
-      margin: 0 10px;
       color: white;
-      font-weight: bold;
       text-decoration: none;
+      font-weight: bold;
+      padding: 12px 16px;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #e68a00;
+    }
+    #menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media (max-width: 768px) {
+      .menu-btn {
+        display: block;
+      }
+      #menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+      #menu.open {
+        display: flex;
+      }
     }
     h2 {
+      text-align: center;
       color: #003344;
+      margin: 20px;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 20px;
+      padding: 10px;
     }
     .gallery a {
       margin: 10px;
-      display: block;
       width: 300px;
     }
     .gallery img {
       width: 100%;
-      height: auto;
       border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
     footer {
       background-color: #003344;
       color: white;
-      padding: 15px 10px;
+      text-align: center;
+      padding: 15px;
       margin-top: 40px;
     }
   </style>
@@ -58,13 +100,16 @@
 <header>
   <h1>Superior Plumbing Solutions, LLC</h1>
   <p>Trusted Residential Plumbing Across the Lowcountry</p>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
 </header>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
+  <div id="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </nav>
 
 <h2>Our Work</h2>
@@ -84,6 +129,13 @@
 <footer>
   &copy; 2025 Superior Plumbing Solutions, LLC
 </footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("open");
+  }
+</script>
 
 </body>
 </html>
