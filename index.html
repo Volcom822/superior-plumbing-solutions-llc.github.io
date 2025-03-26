@@ -2,127 +2,130 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Superior Plumbing Solutions, LLC</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; background: #f2f2f2; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
     header {
       background: #003344;
-      color: white;
+      color: #fff;
       padding: 20px;
       text-align: center;
     }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: white;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
     nav {
       background: #f7941d;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
     }
-    .logo { font-weight: bold; color: #fff; font-size: 1.2em; }
-    .menu-btn {
-      display: none;
-      font-size: 24px;
-      cursor: pointer;
-      color: white;
-    }
-    .nav-links {
-      display: flex;
-      gap: 15px;
-    }
-    .nav-links a {
+
+    nav a {
       color: white;
       text-decoration: none;
+      padding: 10px 15px;
       font-weight: bold;
     }
-    .hero {
-      padding: 40px 20px;
+
+    nav a:hover {
+      background: #d97900;
+    }
+
+    .content {
+      padding: 30px 20px;
       text-align: center;
-      background: #ffd166;
     }
-    .gallery {
-      padding: 20px;
-    }
+
     .gallery img {
-      width: 100%;
+      width: 90%;
       max-width: 400px;
-      margin: 10px auto;
-      display: block;
-      border-radius: 8px;
+      margin: 15px 0;
     }
+
     footer {
       background: #003344;
       color: white;
       text-align: center;
-      padding: 15px;
-      font-size: 14px;
+      padding: 20px;
+      margin-top: 30px;
     }
 
     @media (max-width: 768px) {
-      .nav-links {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
         display: none;
         flex-direction: column;
-        background: #f7941d;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        z-index: 1;
+        align-items: center;
       }
-      .nav-links a {
-        padding: 10px 0;
-        text-align: center;
-      }
-      .nav-links.show {
+
+      nav.active {
         display: flex;
-      }
-      .menu-btn {
-        display: block;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Superior Plumbing Solutions, LLC</h1>
-  </header>
+<header>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <h1>Superior Plumbing Solutions, LLC</h1>
+</header>
 
-  <nav>
-    <div class="logo">MENU</div>
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-      <a href="tankless-maintenance.html">Tankless Maintenance</a>
-      <a href="tankless-repair.html">Tankless Repair</a>
-      <a href="tankless-installation.html">Tankless Installation</a>
-    </div>
-  </nav>
+<nav id="menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="tankless-maintenance.html">Tankless Maintenance</a>
+  <a href="tankless-repair.html">Tankless Repair</a>
+  <a href="tankless-installation.html">Tankless Installation</a>
+</nav>
 
-  <section class="hero">
-    <h2>Welcome!</h2>
-    <p>Explore our services using the menu above.</p>
-  </section>
+<section class="content">
+  <h2>Welcome!</h2>
+  <p>Explore our services using the menu above.</p>
+  <div class="gallery">
+    <img src="web_image_1.jpg" alt="Plumbing Work 1">
+    <img src="FB_IMG_1742889300379.jpg" alt="Plumbing Work 2">
+    <img src="FB_IMG_1742889325270.jpg" alt="Plumbing Work 3">
+  </div>
+</section>
 
-  <section class="gallery">
-    <img src="https://via.placeholder.com/400x250?text=Plumbing+Work+1" alt="Plumbing Work 1"/>
-    <img src="https://via.placeholder.com/400x250?text=Plumbing+Work+2" alt="Plumbing Work 2"/>
-    <img src="https://via.placeholder.com/400x250?text=Plumbing+Work+3" alt="Plumbing Work 3"/>
-  </section>
+<footer>
+  &copy; 2025 Superior Plumbing Solutions, LLC
+</footer>
 
-  <footer>
-    &copy; 2025 Superior Plumbing Solutions, LLC
-  </footer>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('menu');
+    nav.classList.toggle('active');
+  }
+</script>
 
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById("navLinks");
-      nav.classList.toggle("show");
-    }
-  </script>
 </body>
 </html>
