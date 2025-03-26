@@ -23,36 +23,57 @@
       max-width: 200px;
       margin-bottom: 10px;
     }
-    header h1 {
-      font-size: 2em;
-      margin: 0;
+    nav {
+      background-color: #e63946;
+      overflow: hidden;
     }
-    header p {
-      font-size: 1em;
-      margin-top: 5px;
+    nav a, .dropdown-btn {
+      float: left;
+      font-weight: bold;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    nav .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    nav .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    nav .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    nav .dropdown:hover .dropdown-content {
+      display: block;
     }
     .hero {
       background: #e63946;
       color: white;
       text-align: center;
-      padding: 30px 20px;
-    }
-    .hero h2 {
-      font-size: 1.8em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.1em;
-      margin: 0;
+      padding: 40px 20px;
     }
     .hero .cta-button {
       background: white;
       color: #e63946;
       font-weight: bold;
-      padding: 10px 20px;
+      padding: 12px 24px;
       border-radius: 5px;
-      display: inline-block;
-      margin-top: 15px;
       text-decoration: none;
     }
     .section {
@@ -74,51 +95,66 @@
       padding: 20px;
       font-size: 0.9em;
     }
-    a {
-      color: #e63946;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
-  <header>
-    <img src="Screenshot_20250325_145329_Photos.jpg" alt="Superior Plumbing Logo" />
-    <h1>Superior Plumbing Solutions, LLC</h1>
-    <p>Trusted Residential Plumbing Across the Lowcountry</p>
-  </header>
 
-  <section class="hero">
-    <h2>Need Water Heater Help?</h2>
-    <p>Honest, Reliable, and Respectful.</p>
-    <a class="cta-button" href="tel:8437044393">Call (843) 704-4393</a>
-  </section>
+<header>
+  <img src="Screenshot_20250325_145329_Photos.jpg" alt="Superior Plumbing Logo" />
+  <h1>Superior Plumbing Solutions, LLC</h1>
+  <p>Trusted Residential Plumbing Across the Lowcountry</p>
+</header>
 
-  <section class="section">
-    <h3>Our Services</h3>
-    <ul>
-      <li>Tankless Water Heater Flushing & Maintenance</li>
-      <li>Water Heater Installation & Repairs</li>
-      <li>Toilet Repairs</li>
-      <li>Drain Cleaning</li>
-      <li>Leak Detection & Fixes</li>
-      <li>Emergency Plumbing</li>
-    </ul>
-  </section>
+<nav>
+  <a href="#about">About</a>
+  <div class="dropdown">
+    <a href="javascript:void(0)" class="dropdown-btn">Services</a>
+    <div class="dropdown-content">
+      <a href="#waterheaters">Water Heater Services</a>
+      <a href="#flushing">Tankless Flushing</a>
+      <a href="#drain">Drain Cleaning</a>
+    </div>
+  </div>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section class="section">
-    <h3>Contact</h3>
-    <p><strong>Phone:</strong> <a href="tel:8437044393">(843) 704-4393</a></p>
-    <p><strong>Email:</strong> <a href="mailto:SuperiorPlumbingSolutionsLLC@gmail.com">SuperiorPlumbingSolutionsLLC@gmail.com</a></p>
-    <p><strong>Facebook:</strong> <a href="https://facebook.com/SuperiorPlumbingSolutionsSC" target="_blank">Superior Plumbing Solutions SC</a></p>
-    <p><strong>License:</strong> RBP44530</p>
-  </section>
+<div class="hero">
+  <h2>Honest, Reliable, and Respectful</h2>
+  <p>Need help fast? We’re just a call away.</p>
+  <a class="cta-button" href="tel:8437044393">Call (843) 704-4393</a>
+</div>
 
-  <footer>
-    Proudly Serving Charleston, SC and the Tri-County Area<br>
-    © 2025 Superior Plumbing Solutions, LLC
-  </footer>
+<section id="waterheaters" class="section">
+  <h3>Water Heater Services</h3>
+  <p>Installations, repairs, and maintenance of traditional and tankless units. We help you get hot water fast.</p>
+</section>
+
+<section id="flushing" class="section">
+  <h3>Tankless Water Heater Flushing</h3>
+  <p>Recommended yearly. Keeps your system clean and efficient, and helps it last longer.</p>
+</section>
+
+<section id="drain" class="section">
+  <h3>Drain Cleaning</h3>
+  <p>Fast, non-invasive unclogging for kitchen sinks, tubs, and sewer lines. Residential only.</p>
+</section>
+
+<section id="about" class="section">
+  <h3>About Us</h3>
+  <p>Locally owned and operated in the Tri-County area, Superior Plumbing Solutions, LLC is committed to providing honest, reliable, and respectful service to homes throughout the Lowcountry.</p>
+</section>
+
+<section id="contact" class="section">
+  <h3>Contact</h3>
+  <p><strong>Phone:</strong> <a href="tel:8437044393">(843) 704-4393</a></p>
+  <p><strong>Email:</strong> <a href="mailto:SuperiorPlumbingSolutionsLLC@gmail.com">SuperiorPlumbingSolutionsLLC@gmail.com</a></p>
+  <p><strong>Facebook:</strong> <a href="https://facebook.com/SuperiorPlumbingSolutionsSC" target="_blank">Superior Plumbing Solutions SC</a></p>
+</section>
+
+<footer>
+  Proudly Serving Charleston, SC and the Tri-County Area<br>
+  &copy; 2025 Superior Plumbing Solutions, LLC
+</footer>
+
 </body>
 </html>
