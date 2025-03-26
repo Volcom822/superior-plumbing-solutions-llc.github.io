@@ -5,101 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Superior Plumbing Solutions, LLC</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f4f4f4;
-      color: #333;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f2f2f2; }
     header {
-      background: #003049;
-      color: #fff;
+      background: #003344;
+      color: white;
       padding: 20px;
       text-align: center;
     }
-    .logo {
-      width: 160px;
-      margin: 10px auto;
-      display: block;
-    }
     nav {
-      background: #f77f00;
-      padding: 10px;
+      background: #f7941d;
       display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
     }
-    nav a {
-      color: #fff;
+    .logo { font-weight: bold; color: #fff; font-size: 1.2em; }
+    .menu-btn {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: white;
+    }
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+    .nav-links a {
+      color: white;
       text-decoration: none;
       font-weight: bold;
-      padding: 5px 10px;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .main {
+    .hero {
+      padding: 40px 20px;
       text-align: center;
-      padding: 30px 15px;
-      background: #ffcc80;
+      background: #ffd166;
     }
     .gallery {
       padding: 20px;
-      background: #fff;
     }
     .gallery img {
-      width: 90%;
-      max-width: 600px;
+      width: 100%;
+      max-width: 400px;
       margin: 10px auto;
       display: block;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     footer {
-      background: #003049;
+      background: #003344;
       color: white;
       text-align: center;
       padding: 15px;
       font-size: 14px;
     }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #f7941d;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+      }
+      .nav-links a {
+        padding: 10px 0;
+        text-align: center;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .menu-btn {
+        display: block;
+      }
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="https://raw.githubusercontent.com/Volcom822/superior-plumbing-solutions-llc.github.io/main/Screenshot_20250325_145329_Photos.jpg" alt="Company Logo" class="logo">
-  <h1>Superior Plumbing Solutions, LLC</h1>
-</header>
+  <header>
+    <h1>Superior Plumbing Solutions, LLC</h1>
+  </header>
 
-<nav>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Contact</a>
-  <a href="#">Tankless Maintenance</a>
-  <a href="#">Tankless Repair</a>
-  <a href="#">Tankless Installation</a>
-</nav>
+  <nav>
+    <div class="logo">MENU</div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="tankless-maintenance.html">Tankless Maintenance</a>
+      <a href="tankless-repair.html">Tankless Repair</a>
+      <a href="tankless-installation.html">Tankless Installation</a>
+    </div>
+  </nav>
 
-<section class="main">
-  <h2>Welcome!</h2>
-  <p>Explore our services using the menu above.</p>
-</section>
+  <section class="hero">
+    <h2>Welcome!</h2>
+    <p>Explore our services using the menu above.</p>
+  </section>
 
-<section class="gallery">
-  <img src="https://images.unsplash.com/photo-1581579185169-4f9e9c77e67f" alt="Plumbing Work 1">
-  <img src="https://images.unsplash.com/photo-1570132252824-bda3fa6c3733" alt="Plumbing Work 2">
-  <img src="https://images.unsplash.com/photo-1611162617213-3b5ef2a07b1b" alt="Plumbing Work 3">
-</section>
+  <section class="gallery">
+    <img src="https://via.placeholder.com/400x250?text=Plumbing+Work+1" alt="Plumbing Work 1"/>
+    <img src="https://via.placeholder.com/400x250?text=Plumbing+Work+2" alt="Plumbing Work 2"/>
+    <img src="https://via.placeholder.com/400x250?text=Plumbing+Work+3" alt="Plumbing Work 3"/>
+  </section>
 
-<footer>
-  © 2025 Superior Plumbing Solutions, LLC
-</footer>
+  <footer>
+    &copy; 2025 Superior Plumbing Solutions, LLC
+  </footer>
 
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>
 </body>
 </html>
