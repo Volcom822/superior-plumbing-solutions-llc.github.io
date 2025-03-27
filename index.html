@@ -4,171 +4,155 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Superior Plumbing Solutions, LLC</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eef2f3;
+      color: #222;
+      line-height: 1.6;
     }
-
     header {
-      background-color: #003344;
-      color: white;
+      background-color: #002b36;
+      color: #fff;
       text-align: center;
-      padding: 30px 20px;
+      padding: 30px 20px 20px;
+      position: relative;
     }
-
+    header h1 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1em;
+      opacity: 0.9;
+    }
     .menu-btn {
       display: none;
       font-size: 28px;
-      color: white;
       background: none;
       border: none;
+      color: #fff;
       position: absolute;
-      top: 25px;
+      top: 20px;
       right: 20px;
       cursor: pointer;
     }
-
     nav {
-      background-color: #f7941d;
+      background-color: #ff9800;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      padding: 10px;
     }
-
     nav a {
       color: white;
+      padding: 14px 20px;
       text-decoration: none;
       font-weight: 600;
-      margin: 6px;
-      padding: 10px 16px;
-      border-radius: 6px;
-      transition: background-color 0.3s ease, transform 0.2s ease;
+      transition: background-color 0.2s ease;
     }
-
     nav a:hover {
-      background-color: #e68a00;
-      transform: translateY(-2px);
+      background-color: #e57f00;
     }
-
     #menu {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
-
     @media (max-width: 768px) {
       .menu-btn {
         display: block;
       }
-
       #menu {
         display: none;
         flex-direction: column;
         width: 100%;
-        align-items: center;
       }
-
       #menu.open {
         display: flex;
       }
-
-      nav a {
-        margin: 8px 0;
-        width: 90%;
-        text-align: center;
-      }
     }
-
     h2 {
       text-align: center;
       color: #003344;
       margin: 30px 0 10px;
+      font-size: 1.5em;
     }
-
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
-
     .gallery a {
-      margin: 10px;
-      width: 300px;
-      display: block;
-      transition: transform 0.3s ease;
+      text-decoration: none;
     }
-
-    .gallery a:hover {
-      transform: scale(1.03);
-    }
-
     .gallery img {
       width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease-in-out;
     }
-
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
     footer {
-      background-color: #003344;
+      background-color: #002b36;
       color: white;
       text-align: center;
       padding: 20px;
+      font-size: 0.9em;
       margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Superior Plumbing Solutions, LLC</h1>
-    <p>Trusted Residential Plumbing Across the Lowcountry</p>
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-  </header>
+<header>
+  <h1>Superior Plumbing Solutions, LLC</h1>
+  <p>Trusted Residential Plumbing Across the Lowcountry</p>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
 
-  <nav>
-    <div id="menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
-
-  <h2>Our Work</h2>
-  <div class="gallery">
-    <a href="#"><img src="FB_IMG_1743001097664.jpg" alt="Plumbing Photo 1" /></a>
-    <a href="#"><img src="FB_IMG_1743001104239.jpg" alt="Plumbing Photo 2" /></a>
-    <a href="#"><img src="FB_IMG_1743001127707.jpg" alt="Plumbing Photo 3" /></a>
-    <a href="#"><img src="FB_IMG_1743001136083.jpg" alt="Plumbing Photo 4" /></a>
-    <a href="#"><img src="FB_IMG_1743001155474.jpg" alt="Plumbing Photo 5" /></a>
-    <a href="#"><img src="FB_IMG_1743001161204.jpg" alt="Plumbing Photo 6" /></a>
-    <a href="#"><img src="FB_IMG_1743001167521.jpg" alt="Plumbing Photo 7" /></a>
-    <a href="#"><img src="Messenger_creation_E1F39BBD-6FC5-45FB-BDA9-A0A8EB5772CE.jpeg" alt="Plumbing Photo 8" /></a>
-    <a href="#"><img src="Messenger_creation_B1A77419-35B4-4CE0-A103-B72517F0BDAF.jpeg" alt="Plumbing Photo 9" /></a>
-    <a href="#"><img src="Messenger_creation_1C6F78C4-2A81-4FBB-8635-9267D2BEB8C3.jpeg" alt="Plumbing Photo 10" /></a>
+<nav>
+  <div id="menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
   </div>
+</nav>
 
-  <footer>
-    &copy; 2025 Superior Plumbing Solutions, LLC
-  </footer>
+<h2>Our Work</h2>
+<div class="gallery">
+  <a href="#"><img src="FB_IMG_1742889391135.jpg" alt="Plumbing Photo 1" /></a>
+  <a href="#"><img src="FB_IMG_1742889398056.jpg" alt="Plumbing Photo 2" /></a>
+  <a href="#"><img src="FB_IMG_1743001127707.jpg" alt="Plumbing Photo 3" /></a>
+  <a href="#"><img src="FB_IMG_1743001136083.jpg" alt="Plumbing Photo 4" /></a>
+  <a href="#"><img src="FB_IMG_1743001155474.jpg" alt="Plumbing Photo 5" /></a>
+  <a href="#"><img src="FB_IMG_1743001161204.jpg" alt="Plumbing Photo 6" /></a>
+  <a href="#"><img src="FB_IMG_1743001167521.jpg" alt="Plumbing Photo 7" /></a>
+  <a href="#"><img src="Messenger_creation_1C6F78C4-2A81-4FBB-8635-9267D2BEB8C3.jpeg" alt="Plumbing Photo 8" /></a>
+  <a href="#"><img src="Messenger_creation_B1A77419-35B4-4CE0-A103-B72517F0BDAF.jpeg" alt="Plumbing Photo 9" /></a>
+  <a href="#"><img src="Messenger_creation_E1F39BBD-6FC5-45FB-BDA9-A0A8EB5772CE.jpeg" alt="Plumbing Photo 10" /></a>
+</div>
 
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.classList.toggle("open");
-    }
-  </script>
+<footer>
+  &copy; 2025 Superior Plumbing Solutions, LLC
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("open");
+  }
+</script>
 
 </body>
 </html>
