@@ -15,39 +15,50 @@
       background-color: #f4f4f4;
       padding-bottom: 60px;
     }
+
     header {
       background-color: #003344;
       color: white;
-      padding: 15px 20px;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       position: sticky;
       top: 0;
       z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
     }
-    .menu-btn {
+
+    .menu-btn, .phone-btn {
+      background-color: white;
+      color: #003344;
       font-size: 28px;
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-    }
-    .site-title {
-      font-size: 18px;
       font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 14px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
-    .phone-icon {
-      font-size: 24px;
+
+    .phone-btn {
+      font-size: 34px;
       text-decoration: none;
-      color: white;
     }
+
+    .site-title {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      flex: 1;
+    }
+
     nav {
       background-color: #f7941d;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
+
     nav a {
       color: white;
       text-decoration: none;
@@ -55,14 +66,17 @@
       padding: 12px 16px;
       display: block;
     }
+
     nav a:hover {
       background-color: #e68a00;
     }
+
     #menu {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
+
     @media (max-width: 768px) {
       #menu {
         display: none;
@@ -73,49 +87,51 @@
         display: flex;
       }
     }
+
     h2 {
       text-align: center;
       color: #003344;
       margin: 20px;
     }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       padding: 10px;
     }
+
     .gallery a {
       margin: 10px;
       width: 300px;
     }
+
     .gallery img {
       width: 100%;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
-    .book-now {
+
+    .book-now-bar {
       position: fixed;
       bottom: 0;
       width: 100%;
-      background-color: #00e64d;
+      background-color: #3DFE2A;
       color: #003344;
       text-align: center;
       font-weight: bold;
+      font-size: 20px;
       padding: 15px;
-      font-size: 18px;
-      cursor: pointer;
+      text-decoration: none;
       z-index: 999;
     }
-    .book-now a {
-      text-decoration: none;
-      color: #003344;
-    }
+
     footer {
       background-color: #003344;
       color: white;
       text-align: center;
       padding: 15px;
-      margin-top: 60px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -123,8 +139,8 @@
 
 <header>
   <button class="menu-btn" onclick="toggleMenu()">☰</button>
-  <div class="site-title">Superior Plumbing</div>
-  <a class="phone-icon" href="tel:18434144021">📞</a>
+  <div class="site-title">Superior Plumbing Solutions, LLC</div>
+  <a href="tel:6092765133" class="phone-btn">📞</a>
 </header>
 
 <nav>
@@ -150,9 +166,7 @@
   <a href="#"><img src="Messenger_creation_E1F39BBD-6FC5-45FB-BDA9-A0A8EB5772CE.jpeg" alt="Plumbing Photo 10" /></a>
 </div>
 
-<div class="book-now">
-  <a href="appointment.html">Book Now</a>
-</div>
+<a href="appointment.html" class="book-now-bar">Book Now</a>
 
 <footer>
   &copy; 2025 Superior Plumbing Solutions, LLC
