@@ -10,6 +10,7 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
@@ -19,84 +20,45 @@
     header {
       background-color: #003344;
       color: white;
-      padding: 30px 20px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      padding: 30px 20px; /* doubled height */
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
     .menu-btn {
-      background-color: white;
-      color: #003344;
-      font-size: 26px;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      padding: 10px 14px;
+      font-size: 28px;
+      color: white;
+      background: none;
+      border: 2px solid white;
+      padding: 6px 10px;
+      border-radius: 4px;
       cursor: pointer;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
     .site-title {
       font-size: 20px;
       font-weight: bold;
       text-align: center;
-      flex: 1;
-      color: white;
+      flex-grow: 1;
     }
 
     .phone-btn {
+      background-color: #D62828;
+      border-radius: 6px;
+      padding: 8px 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(145deg, #f7941d, #ffa733);
-      color: white;
-      font-size: 22px;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
 
-    nav {
-      background-color: #f7941d;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 12px 16px;
-      display: block;
-    }
-
-    nav a:hover {
-      background-color: #e68a00;
-    }
-
-    #menu {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    @media (max-width: 768px) {
-      #menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-      }
-      #menu.open {
-        display: flex;
-      }
+    .phone-btn img {
+      width: 26px;
+      height: 26px;
+      filter: brightness(0); /* turns icon black */
     }
 
     h2 {
@@ -123,21 +85,6 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
-    .book-now-bar {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: #f7941d;
-      color: white;
-      text-align: center;
-      font-weight: bold;
-      font-size: 20px;
-      padding: 16px;
-      text-decoration: none;
-      z-index: 999;
-      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
-    }
-
     footer {
       background-color: #003344;
       color: white;
@@ -145,23 +92,43 @@
       padding: 15px;
       margin-top: 40px;
     }
+
+    .book-now {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #D62828;
+      color: black;
+      text-align: center;
+      padding: 16px;
+      font-size: 20px;
+      font-weight: bold;
+      z-index: 999;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .site-title {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
 
 <header>
   <button class="menu-btn" onclick="toggleMenu()">☰</button>
-  <div class="site-title">Superior Plumbing Solutions, LLC</div>
-  <a href="tel:6092765133" class="phone-btn">📞</a>
+  <div class="site-title">Superior Plumbing Solutions LLC</div>
+  <a class="phone-btn" href="tel:YOUR_PHONE_NUMBER">
+    <img src="phone-icon.png" alt="Phone" />
+  </a>
 </header>
 
-<nav>
-  <div id="menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </div>
+<nav id="menu" style="display: none; background: #f7941d;">
+  <a href="index.html" style="color: white; padding: 12px; display: block; text-align: center;">Home</a>
+  <a href="about.html" style="color: white; padding: 12px; display: block; text-align: center;">About</a>
+  <a href="services.html" style="color: white; padding: 12px; display: block; text-align: center;">Services</a>
+  <a href="contact.html" style="color: white; padding: 12px; display: block; text-align: center;">Contact</a>
 </nav>
 
 <h2>Our Work</h2>
@@ -178,7 +145,7 @@
   <a href="#"><img src="Messenger_creation_E1F39BBD-6FC5-45FB-BDA9-A0A8EB5772CE.jpeg" alt="Plumbing Photo 10" /></a>
 </div>
 
-<a href="appointment.html" class="book-now-bar">Book Now</a>
+<a href="appointment.html" class="book-now">Book Now</a>
 
 <footer>
   &copy; 2025 Superior Plumbing Solutions, LLC
@@ -187,7 +154,7 @@
 <script>
   function toggleMenu() {
     const menu = document.getElementById("menu");
-    menu.classList.toggle("open");
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
   }
 </script>
 
