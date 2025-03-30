@@ -3,44 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thank You</title>
+  <title>Superior Plumbing Solutions LLC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #006D77;
+      color: white;
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
-      text-align: center;
-      padding: 20px;
+      justify-content: space-between;
+      padding: 30px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    .message {
-      background: white;
-      padding: 40px;
+    .menu-icon, .phone-icon {
+      border: 2px solid white;
+      padding: 10px;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background-color: transparent;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
     }
-    h1 {
+    .logo-text {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      flex-grow: 1;
+    }
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: #004f54;
+    }
+    nav.open {
+      display: flex;
+    }
+    nav a {
+      color: white;
+      padding: 12px 20px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #005e66;
+    }
+    .gallery-title {
+      text-align: center;
+      font-size: 24px;
       color: #003344;
-      margin-bottom: 20px;
+      margin: 20px 0;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+    .gallery a {
+      margin: 10px;
+      width: 300px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .book-now-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #FFDD00;
+      color: black;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 15px 0;
+      cursor: pointer;
+      z-index: 999;
+    }
+    footer {
+      background-color: #006D77;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 60px;
     }
     a {
-      display: inline-block;
-      margin-top: 20px;
       text-decoration: none;
-      color: white;
-      background-color: #f7941d;
-      padding: 10px 20px;
-      border-radius: 5px;
+      color: inherit;
     }
   </style>
 </head>
 <body>
-  <div class="message">
-    <h1>Thank You!</h1>
-    <p>Your request has been received. We’ll be in touch shortly.</p>
-    <a href="index.html">Back to Home</a>
+
+<header>
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
   </div>
+  <div class="logo-text">Superior Plumbing Solutions LLC</div>
+  <a href="tel:8437044393" class="phone-icon">
+    <i class="fas fa-phone"></i>
+  </a>
+</header>
+
+<nav id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="appointment.html">Book Appointment</a>
+</nav>
+
+<h2 class="gallery-title">Our Work</h2>
+
+<div class="gallery">
+  <a href="#"><img src="FB_IMG_1742889391135.jpg" alt="Plumbing Photo 1" /></a>
+  <a href="#"><img src="FB_IMG_1742889398056.jpg" alt="Plumbing Photo 2" /></a>
+  <a href="#"><img src="FB_IMG_1743001127707.jpg" alt="Plumbing Photo 3" /></a>
+  <a href="#"><img src="FB_IMG_1743001136083.jpg" alt="Plumbing Photo 4" /></a>
+  <a href="#"><img src="FB_IMG_1743001155474.jpg" alt="Plumbing Photo 5" /></a>
+  <a href="#"><img src="FB_IMG_1743001161204.jpg" alt="Plumbing Photo 6" /></a>
+  <a href="#"><img src="FB_IMG_1743001167521.jpg" alt="Plumbing Photo 7" /></a>
+  <a href="#"><img src="Messenger_creation_1C6F78C4-2A81-4FBB-8635-9267D2BEB8C3.jpeg" alt="Plumbing Photo 8" /></a>
+  <a href="#"><img src="Messenger_creation_B1A77419-35B4-4CE0-A103-B72517F0BDAF.jpeg" alt="Plumbing Photo 9" /></a>
+  <a href="#"><img src="Messenger_creation_E1F39BBD-6FC5-45FB-BDA9-A0A8EB5772CE.jpeg" alt="Plumbing Photo 10" /></a>
+</div>
+
+<a href="appointment.html">
+  <div class="book-now-bar">Book Now</div>
+</a>
+
+<footer>
+  &copy; 2025 Superior Plumbing Solutions, LLC
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
+  }
+</script>
+
 </body>
 </html>
