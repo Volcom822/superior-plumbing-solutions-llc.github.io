@@ -1,3 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Superior Plumbing Solutions LLC</title>
+  <meta name="description" content="Learn more about Superior Plumbing Solutions LLC — a trusted residential plumber in Charleston, SC, dedicated to quality workmanship and reliable service.">
+  <meta name="keywords" content="plumber Charleston SC, residential plumbing, plumbing repair, water heater installation, drain cleaning Charleston, tankless water heater, water filtration, RO system">
+  <meta name="author" content="Superior Plumbing Solutions LLC">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding-bottom: 60px;
+    }
+
+    header {
+      background-color: #006D77;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: 90px;
+    }
+
+    .menu-icon, .phone-icon {
+      border: 2px solid white;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: transparent;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .logo-text {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    #mobileMenu {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease-in-out;
+      position: fixed;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      background-color: #004f54;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #mobileMenu.open {
+      max-height: 500px;
+    }
+
+    #mobileMenu a {
+      color: white;
+      padding: 16px 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #mobileMenu a:hover {
+      background-color: #005e66;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 120px auto 0;
+      padding: 20px;
+      color: #003344;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #003344;
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-size: 17px;
+    }
+
+    footer {
+      background-color: #006D77;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 60px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="logo-text">Superior Plumbing Solutions LLC</div>
+  <a href="tel:8437044393" class="phone-icon">
+    <i class="fas fa-phone"></i>
+  </a>
+</header>
+
+<nav id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="appointment.html">Book Appointment</a>
+</nav>
+
 <main>
   <h1>About Superior Plumbing Solutions LLC</h1>
 
@@ -5,9 +143,21 @@
 
   <p>My name’s Chris, and I founded this company with one goal in mind: provide honest, high-quality plumbing services without the sales pitch. I’ve worked in this industry for <strong>almost 15 years</strong>, and I’ve seen the good, the bad, and the overpriced. I wanted to do it differently — fair prices, real communication, and top-tier workmanship.</p>
 
-  <p>Whether you’re dealing with a clogged drain, a failing water heater, or planning a full plumbing system for your home build, we’ve got the tools and the experience to handle it all. We specialize in <strong>residential plumbing, water heater installations (tank & tankless), fixture replacements, and full plumbing remodels</strong>.</p>
+  <p>Whether you’re dealing with a clogged drain, a failing water heater, or planning a full plumbing system for your home build, we’ve got the tools and the experience to handle it all. We specialize in <strong>residential plumbing, water heater installations (tank & tankless), whole-house water filtration systems, RO (reverse osmosis) drinking water systems, fixture replacements, and full plumbing remodels</strong>.</p>
 
   <p>Thanks for considering us. We look forward to earning your trust one job at a time.</p>
-
-  <p style="margin-top: 30px;"><a href="index.html" style="color:#006D77; font-weight: bold;">← Back to Home</a></p>
 </main>
+
+<footer>
+  &copy; 2025 Superior Plumbing Solutions, LLC
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
+  }
+</script>
+
+</body>
+</html>
