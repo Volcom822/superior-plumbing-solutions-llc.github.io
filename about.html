@@ -2,12 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | Superior Plumbing Solutions LLC</title>
-  <meta name="description" content="Learn more about Superior Plumbing Solutions LLC — a trusted residential plumber serving Charleston and the Tri-County area with honest, high-quality service.">
-  <meta name="keywords" content="plumber Charleston SC, residential plumbing, plumbing repair, water heater installation, drain cleaning Charleston, tankless water heater">
-  <meta name="author" content="Superior Plumbing Solutions LLC">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="Learn more about Superior Plumbing Solutions LLC — a trusted residential plumber in Charleston, SC, dedicated to quality workmanship and reliable service." />
+  <meta name="keywords" content="plumber Charleston SC, residential plumbing, water heater installation, drain cleaning Charleston, tankless plumber SC" />
+  <meta name="author" content="Superior Plumbing Solutions LLC" />
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="About | Superior Plumbing Solutions LLC" />
+  <meta property="og:description" content="Get to know our team and what makes Superior Plumbing Solutions one of Charleston’s most trusted plumbing companies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourwebsite.github.io/about.html" />
+  <meta property="og:image" content="https://yourwebsite.github.io/your-logo.jpg" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Superior Plumbing Solutions LLC",
+    "image": "https://yourwebsite.github.io/your-logo.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Charleston",
+      "addressRegion": "SC",
+      "postalCode": "29401",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-843-704-4393",
+    "email": "SuperiorPlumbingSolutionsLLC@gmail.com",
+    "url": "https://yourwebsite.github.io",
+    "description": "Residential plumbing company serving Charleston and the Tri-County area with water heater installs, drain cleaning, and fixture repair."
+  }
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     * {
       box-sizing: border-box;
@@ -94,6 +123,7 @@
       font-size: 28px;
       margin-bottom: 20px;
       color: #003344;
+      text-align: center;
     }
 
     p {
@@ -115,6 +145,30 @@
     a {
       text-decoration: none;
       color: inherit;
+    }
+
+    .book-now {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f7941d;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 18px;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    .book-now:hover {
+      background-color: #e68a00;
+    }
+
+    @media (min-width: 768px) {
+      .book-now {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -141,16 +195,19 @@
 <main>
   <h1>About Superior Plumbing Solutions LLC</h1>
 
-  <p>Welcome to Superior Plumbing Solutions LLC — where dependable service meets exceptional quality. We’re a small, family-run business proudly serving South Carolina’s Lowcountry. We take pride in leaving your home better than we found it — every time.</p>
+  <p>Welcome to Superior Plumbing Solutions LLC — where dependable service meets exceptional quality. Based here in the Charleston area of South Carolina, we’re a small, family-run business that prides itself on treating every customer like a neighbor, not just a number.</p>
 
-  <p>After nearly 15 years in the trade, our owner Chris saw how often homeowners were dealing with salespeople instead of real plumbers. Superior Plumbing Solutions was built to change that. We focus on what matters: quality work, fair pricing, and clear communication — no gimmicks, no pressure, just honest plumbing done right.</p>
+  <p>After almost 15 years in the trade, our founder started this company to offer something different: skilled plumbing by experienced professionals, without the sales pitch. We’ve seen the upcharges, gimmicks, and high-pressure quotes — and we wanted no part of it.</p>
 
-  <p>Whether you’re dealing with a clogged drain, a failing water heater, or planning a full plumbing system for your home build, we’ve got the tools and the experience to handle it all. We specialize in <strong>residential plumbing, water heater installations (tank & tankless), fixture replacements, and full plumbing remodels</strong>.</p>
+  <p>Whether you’re dealing with a clogged drain, a failing water heater, or planning a full plumbing remodel, we’ve got the tools and experience to do it right. We specialize in <strong>residential plumbing, water heater installs (tank & tankless), fixture replacement, whole-home water filtration systems, and RO systems</strong>.</p>
 
-  <p>We’re licensed, bonded, and insured in South Carolina, proudly serving Charleston and the entire Tri-County area.</p>
+  <p>We’re fully licensed, bonded, and insured in South Carolina, and proudly serve <strong>Charleston, Mt. Pleasant, Summerville, Goose Creek, North Charleston, and the surrounding Lowcountry</strong>.</p>
 
-  <p>We appreciate the opportunity to earn your business. With every job, we’re committed to delivering the kind of service you’d recommend to family and friends.</p>
+  <p>Thanks for considering us — we look forward to earning your trust one job at a time.</p>
 </main>
+
+<!-- Book Now Button -->
+<a href="appointment.html" class="book-now">Book Now</a>
 
 <footer>
   &copy; 2025 Superior Plumbing Solutions, LLC<br>
