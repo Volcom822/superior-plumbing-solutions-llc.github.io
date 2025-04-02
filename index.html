@@ -169,6 +169,32 @@
       line-height: 1.5;
     }
 
+    .book-now {
+      position: fixed;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #D62828;
+      color: black;
+      padding: 14px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      text-decoration: none;
+      z-index: 9999;
+    }
+
+    .book-now:hover {
+      background-color: #b81f1f;
+    }
+
+    @media (min-width: 768px) {
+      .book-now {
+        display: none;
+      }
+    }
+
     a {
       text-decoration: none;
       color: inherit;
@@ -199,7 +225,7 @@
   <h1>Superior Plumbing Solutions LLC</h1>
   <p>We’re a small, family-run business proudly serving South Carolina’s Lowcountry with honest, high-quality plumbing services. We take pride in leaving your home better than we found it — every time.</p>
 
-  <p>Whether it’s installing a new water heater, fixing a leak, or remodeling your fixtures, our work is always handled by trained, experienced plumbers.</p>
+  <p>Whether it’s installing a new water heater, fixing a leak, or remodeling your fixtures, our work is always handled by trained, experienced plumbers — not salespeople. No pressure, no gimmicks, just quality plumbing done right.</p>
 
   <h2>Our Work</h2>
   <div class="gallery">
@@ -215,6 +241,9 @@
     <a href="#"><img src="Messenger_creation_E1F39BBD-6FC5-45FB-BDA9-A0A8EB5772CE.jpeg" alt="Plumbing Photo 10" /></a>
   </div>
 </main>
+
+<!-- Book Now Button -->
+<a href="appointment.html" class="book-now">Book Now</a>
 
 <footer>
   &copy; 2025 Superior Plumbing Solutions, LLC<br>
