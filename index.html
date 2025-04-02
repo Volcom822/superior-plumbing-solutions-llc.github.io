@@ -39,20 +39,13 @@
   </script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: Arial, sans-serif;
       background-color: #f5f5f5;
       padding-bottom: 60px;
     }
-
     header {
       background-color: #006D77;
       color: white;
@@ -67,7 +60,6 @@
       z-index: 1000;
       height: 90px;
     }
-
     .menu-icon, .phone-icon {
       border: 2px solid white;
       padding: 10px;
@@ -77,14 +69,12 @@
       font-size: 24px;
       cursor: pointer;
     }
-
     .logo-text {
       font-size: 20px;
       font-weight: bold;
       text-align: center;
       flex-grow: 1;
     }
-
     #mobileMenu {
       overflow: hidden;
       max-height: 0;
@@ -98,11 +88,7 @@
       display: flex;
       flex-direction: column;
     }
-
-    #mobileMenu.open {
-      max-height: 500px;
-    }
-
+    #mobileMenu.open { max-height: 500px; }
     #mobileMenu a {
       color: white;
       padding: 16px 20px;
@@ -110,55 +96,44 @@
       text-decoration: none;
       font-weight: bold;
     }
-
-    #mobileMenu a:hover {
-      background-color: #005e66;
-    }
-
+    #mobileMenu a:hover { background-color: #005e66; }
     main {
       max-width: 900px;
       margin: 120px auto 0;
       padding: 20px;
       color: #003344;
     }
-
     h1 {
       font-size: 28px;
       margin-bottom: 20px;
       color: #003344;
       text-align: center;
     }
-
     h2 {
       font-size: 22px;
       margin: 20px 0 10px;
       color: #005f63;
     }
-
     p {
       margin-bottom: 15px;
       line-height: 1.6;
       font-size: 16px;
     }
-
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       padding: 10px;
     }
-
     .gallery a {
       margin: 10px;
       width: 300px;
     }
-
     .gallery img {
       width: 100%;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
-
     footer {
       background-color: #006D77;
       color: white;
@@ -168,37 +143,21 @@
       font-size: 14px;
       line-height: 1.5;
     }
-
     .book-now {
       position: fixed;
-      bottom: 15px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #D62828;
-      color: black;
-      padding: 14px 30px;
-      font-size: 16px;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f7941d;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 18px;
       font-weight: bold;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      text-decoration: none;
-      z-index: 9999;
+      z-index: 1000;
     }
-
-    .book-now:hover {
-      background-color: #b81f1f;
-    }
-
-    @media (min-width: 768px) {
-      .book-now {
-        display: none;
-      }
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    .book-now:hover { background-color: #e68a00; }
+    @media (min-width: 768px) { .book-now { display: none; } }
   </style>
 </head>
 <body>
