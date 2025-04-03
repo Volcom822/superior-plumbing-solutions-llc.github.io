@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Superior Plumbing Solutions LLC</title>
-  <meta name="description" content="Get in touch with Superior Plumbing Solutions LLC. Schedule plumbing service or ask us a question — proudly serving Charleston and the Tri-County area." />
-  <meta name="keywords" content="plumbing contact Charleston, plumber phone number, plumbing help SC, plumber email Charleston, contact Superior Plumbing" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Superior Plumbing Solutions LLC</title>
+  <meta name="description" content="Contact Superior Plumbing Solutions LLC for expert plumbing services across Charleston and the Tri-County area. Call, email, or request service today." />
+  <meta name="keywords" content="contact plumber Charleston, plumbing quote, plumbing help SC, Superior Plumbing Solutions contact" />
   <meta name="author" content="Superior Plumbing Solutions LLC" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph for Social Sharing -->
   <meta property="og:title" content="Contact Superior Plumbing Solutions LLC" />
-  <meta property="og:description" content="Have a plumbing question or need to book a service? Reach out to our licensed and experienced plumbers today." />
+  <meta property="og:description" content="Reach out for honest, high-quality plumbing service in Charleston and beyond." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://volcom822.github.io/superior-plumbing-solutions-llc.github.io/contact.html" />
+  <meta property="og:url" content="https://yourwebsite.github.io/contact.html" />
   <meta property="og:image" content="https://yourwebsite.github.io/your-logo.jpg" />
 
-  <!-- Schema for Google -->
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,14 +31,13 @@
     },
     "telephone": "+1-843-704-4393",
     "email": "SuperiorPlumbingSolutionsLLC@gmail.com",
-    "url": "https://volcom822.github.io/superior-plumbing-solutions-llc.github.io/contact.html",
+    "url": "https://yourwebsite.github.io",
     "priceRange": "$$",
-    "openingHours": "Mo-Fr 08:00-18:00",
-    "description": "Reach out to Superior Plumbing Solutions LLC — your trusted local plumber serving Charleston and the Lowcountry area."
+    "openingHours": "Mo-Fr 08:00-18:00"
   }
   </script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -112,7 +111,7 @@
 
     main {
       max-width: 900px;
-      margin: 120px auto 40px;
+      margin: 120px auto 0;
       padding: 20px;
       color: #003344;
     }
@@ -124,65 +123,35 @@
       color: #003344;
     }
 
-    form {
+    .contact-info {
       background: white;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
-
-    button {
-      background-color: #f7941d;
-      color: white;
-      border: none;
-      padding: 12px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       margin-top: 20px;
     }
 
-    button:hover {
-      background-color: #e68a00;
-    }
-
-    .contact-info {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .contact-info p {
+    .contact-info div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
       font-size: 16px;
-      margin: 10px 0;
     }
 
     .contact-info i {
-      margin-right: 10px;
       color: #006D77;
+      margin-right: 10px;
+      min-width: 25px;
+      text-align: center;
+    }
+
+    .contact-info a {
+      color: #003344;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -190,6 +159,7 @@
       color: white;
       text-align: center;
       padding: 15px;
+      margin-top: 40px;
       font-size: 14px;
       line-height: 1.5;
     }
@@ -209,9 +179,7 @@
       text-decoration: none;
     }
 
-    .book-now:hover {
-      background-color: #e68a00;
-    }
+    .book-now:hover { background-color: #e68a00; }
 
     @media (min-width: 768px) {
       .book-now { display: none; }
@@ -221,9 +189,13 @@
 <body>
 
 <header>
-  <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
   <div class="logo-text">Superior Plumbing Solutions LLC</div>
-  <a href="tel:8437044393" class="phone-icon"><i class="fas fa-phone"></i></a>
+  <a href="tel:8437044393" class="phone-icon">
+    <i class="fas fa-phone"></i>
+  </a>
 </header>
 
 <nav id="mobileMenu">
@@ -236,31 +208,11 @@
 
 <main>
   <h1>Get in Touch</h1>
-
-  <form action="https://formsubmit.co/SuperiorPlumbingSolutionsLLC@gmail.com" method="POST">
-    <input type="hidden" name="_next" value="thankyou.html" />
-    <input type="hidden" name="_captcha" value="false" />
-    
-    <label for="name">Full Name</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="phone" required>
-
-    <label for="message">Your Message</label>
-    <textarea id="message" name="message" required></textarea>
-
-    <button type="submit">Submit</button>
-  </form>
-
   <div class="contact-info">
-    <p><i class="fas fa-phone-alt"></i> <a href="tel:8437044393">(843) 704-4393</a></p>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:SuperiorPlumbingSolutionsLLC@gmail.com">SuperiorPlumbingSolutionsLLC@gmail.com</a></p>
-    <p><i class="fas fa-clock"></i> Monday–Friday: 8:00 AM – 6:00 PM</p>
-    <p><i class="fas fa-map-marker-alt"></i> Proudly serving Charleston and the Tri-County area</p>
+    <div><i class="fas fa-phone-alt"></i> <a href="tel:8437044393">(843) 704-4393</a></div>
+    <div><i class="fas fa-envelope"></i> <a href="mailto:SuperiorPlumbingSolutionsLLC@gmail.com">SuperiorPlumbingSolutionsLLC@gmail.com</a></div>
+    <div><i class="fas fa-clock"></i> Monday–Friday: 8:00 AM – 6:00 PM</div>
+    <div><i class="fas fa-map-marker-alt"></i> Proudly serving Charleston and the Tri-County area</div>
   </div>
 </main>
 
