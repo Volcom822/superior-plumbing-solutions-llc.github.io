@@ -2,20 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Superior Plumbing Solutions LLC</title>
-  <meta name="description" content="Contact Superior Plumbing Solutions LLC for honest, high-quality residential plumbing service in Charleston and the Tri-County area." />
-  <meta name="keywords" content="Charleston plumber, contact plumber, residential plumbing, South Carolina plumbing services" />
-  <meta name="author" content="Superior Plumbing Solutions LLC" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Superior Plumbing Solutions LLC</title>
+  <meta name="description" content="Contact Superior Plumbing Solutions LLC for trusted plumbing services across Charleston and the Tri-County area. Call or message us today."/>
+  <meta name="keywords" content="contact plumber Charleston SC, plumbing services, water heater repair, Superior Plumbing Solutions"/>
+  <meta name="author" content="Superior Plumbing Solutions LLC"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: Arial, sans-serif;
       background-color: #f5f5f5;
-      padding-bottom: 70px;
+      padding-bottom: 60px;
     }
     header {
       background-color: #006D77;
@@ -46,7 +44,6 @@
       text-align: center;
       flex-grow: 1;
     }
-
     #mobileMenu {
       overflow: hidden;
       max-height: 0;
@@ -60,11 +57,7 @@
       display: flex;
       flex-direction: column;
     }
-
-    #mobileMenu.open {
-      max-height: 500px;
-    }
-
+    #mobileMenu.open { max-height: 500px; }
     #mobileMenu a {
       color: white;
       padding: 16px 20px;
@@ -72,71 +65,70 @@
       text-decoration: none;
       font-weight: bold;
     }
-
-    #mobileMenu a:hover {
-      background-color: #005e66;
-    }
-
+    #mobileMenu a:hover { background-color: #005e66; }
     main {
-      max-width: 600px;
+      max-width: 900px;
       margin: 120px auto 0;
       padding: 20px;
-      text-align: center;
       color: #003344;
     }
-
     h1 {
-      font-size: 26px;
-      margin-bottom: 10px;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #003344;
+      text-align: center;
     }
-
     form {
       background: white;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
     }
-
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
     input, textarea {
       width: 100%;
-      padding: 12px;
+      padding: 10px;
       margin-bottom: 15px;
       border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 16px;
     }
-
     button {
       background-color: #f7941d;
       color: white;
       border: none;
-      padding: 14px;
+      padding: 12px 20px;
       border-radius: 5px;
       font-size: 16px;
-      font-weight: bold;
       cursor: pointer;
       width: 100%;
     }
-
-    button:hover {
-      background-color: #e68a00;
-    }
-
-    .contact-info p {
-      margin: 10px 0;
+    button:hover { background-color: #e68a00; }
+    .contact-info {
+      margin-top: 30px;
+      text-align: center;
       font-size: 16px;
     }
-
+    .contact-info i {
+      color: #006D77;
+      margin-right: 8px;
+    }
+    .contact-info a {
+      color: #003344;
+      text-decoration: none;
+    }
     footer {
       background-color: #006D77;
       color: white;
       text-align: center;
       padding: 15px;
       font-size: 14px;
-      line-height: 1.6;
+      line-height: 1.5;
     }
-
     .book-now {
       position: fixed;
       bottom: 0;
@@ -151,14 +143,8 @@
       z-index: 1000;
       text-decoration: none;
     }
-
-    .book-now:hover {
-      background-color: #e68a00;
-    }
-
-    @media (min-width: 768px) {
-      .book-now { display: none; }
-    }
+    .book-now:hover { background-color: #e68a00; }
+    @media (min-width: 768px) { .book-now { display: none; } }
   </style>
 </head>
 <body>
@@ -180,35 +166,41 @@
 <main>
   <h1>Get In Touch</h1>
   <form action="https://formsubmit.co/SuperiorPlumbingSolutionsLLC@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Full Name" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <input type="tel" name="phone" placeholder="Phone Number" required>
-    <textarea name="message" rows="4" placeholder="Your Message..." required></textarea>
-    <input type="hidden" name="_next" value="thankyou.html">
-    <input type="hidden" name="_captcha" value="false">
-    <button type="submit">Send Message</button>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
   </form>
 
   <div class="contact-info">
-    <p><strong>Phone:</strong> <a href="tel:8437044393">(843) 704-4393</a></p>
-    <p><strong>Email:</strong> <a href="mailto:SuperiorPlumbingSolutionsLLC@gmail.com">SuperiorPlumbingSolutionsLLC@gmail.com</a></p>
-    <p><strong>Hours:</strong> Monday–Friday: 8:00 AM – 6:00 PM</p>
-    <p>Proudly serving Charleston and the Tri-County area</p>
+    <p><i class="fas fa-phone"></i><strong>Call Us:</strong> <a href="tel:8437044393">(843) 704-4393</a></p>
+    <p><i class="fas fa-envelope"></i><strong>Email:</strong> <a href="mailto:SuperiorPlumbingSolutionsLLC@gmail.com">SuperiorPlumbingSolutionsLLC@gmail.com</a></p>
+    <p><i class="fas fa-clock"></i><strong>Hours:</strong> Monday – Friday: 8:00 AM – 6:00 PM</p>
+    <p><i class="fas fa-map-marker-alt"></i> Proudly serving Charleston and the Tri-County area</p>
   </div>
 </main>
 
-<!-- Book Now Button -->
 <a href="appointment.html" class="book-now">Book Now</a>
 
 <footer>
   &copy; 2025 Superior Plumbing Solutions, LLC<br>
-  Licensed, Bonded & Insured — South Carolina License # RBP44530
+  Licensed, Bonded & Insured — South Carolina<br>
+  License # RBP44530
 </footer>
 
 <script>
   function toggleMenu() {
-    const menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('open');
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("open");
   }
 </script>
 
