@@ -2,26 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Superior Plumbing Solutions LLC | Residential Plumbing in Charleston SC</title>
-  <meta name="description" content="Superior Plumbing Solutions LLC provides honest, high-quality residential plumbing services across Charleston and the Tri-County area. Water heaters, drain cleaning, and more." />
-  <meta name="keywords" content="plumber Charleston SC, plumbing services, residential plumbing, water heater installation, tankless water heater Charleston, drain cleaning, licensed plumber SC" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment | Superior Plumbing Solutions LLC</title>
+  <meta name="description" content="Request a plumbing appointment with Superior Plumbing Solutions LLC. Serving Charleston and the Tri-County area with honest, high-quality service." />
+  <meta name="keywords" content="book plumber Charleston SC, plumbing appointment, schedule plumber, drain cleaning appointment, water heater install Charleston" />
   <meta name="author" content="Superior Plumbing Solutions LLC" />
 
-  <!-- Open Graph for Social Sharing -->
-  <meta property="og:title" content="Superior Plumbing Solutions LLC - Residential Plumbing in Charleston SC" />
-  <meta property="og:description" content="Top-rated plumbing services including water heaters, drain cleaning, and more across the Charleston Tri-County area." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Book Appointment - Superior Plumbing Solutions LLC" />
+  <meta property="og:description" content="Easy online booking for residential plumbing in Charleston SC and surrounding areas." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourwebsite.github.io/" />
+  <meta property="og:url" content="https://yourwebsite.github.io/appointment.html" />
   <meta property="og:image" content="https://yourwebsite.github.io/your-logo.jpg" />
 
-  <!-- Schema.org JSON-LD for Google -->
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Superior Plumbing Solutions LLC",
-    "image": "https://yourwebsite.github.io/your-logo.jpg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Charleston",
@@ -32,20 +31,24 @@
     "telephone": "+1-843-704-4393",
     "email": "SuperiorPlumbingSolutionsLLC@gmail.com",
     "url": "https://yourwebsite.github.io",
-    "priceRange": "$$",
-    "openingHours": "Mo-Fr 08:00-18:00",
-    "description": "Residential plumbing company serving Charleston and the Tri-County area with water heater installs, drain cleaning, and fixture repair."
+    "description": "Request an appointment with a licensed residential plumber in Charleston and the Tri-County area."
   }
   </script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: Arial, sans-serif;
       background-color: #f5f5f5;
       padding-bottom: 60px;
     }
+
     header {
       background-color: #006D77;
       color: white;
@@ -60,6 +63,7 @@
       z-index: 1000;
       height: 90px;
     }
+
     .menu-icon, .phone-icon {
       border: 2px solid white;
       padding: 10px;
@@ -69,12 +73,14 @@
       font-size: 24px;
       cursor: pointer;
     }
+
     .logo-text {
       font-size: 20px;
       font-weight: bold;
       text-align: center;
       flex-grow: 1;
     }
+
     #mobileMenu {
       overflow: hidden;
       max-height: 0;
@@ -88,7 +94,11 @@
       display: flex;
       flex-direction: column;
     }
-    #mobileMenu.open { max-height: 500px; }
+
+    #mobileMenu.open {
+      max-height: 500px;
+    }
+
     #mobileMenu a {
       color: white;
       padding: 16px 20px;
@@ -96,54 +106,66 @@
       text-decoration: none;
       font-weight: bold;
     }
-    #mobileMenu a:hover { background-color: #005e66; }
+
+    #mobileMenu a:hover {
+      background-color: #005e66;
+    }
+
     main {
-      max-width: 900px;
-      margin: 120px auto 0;
+      max-width: 600px;
+      margin: 120px auto 40px;
       padding: 20px;
-      color: #003344;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
+
     h1 {
-      font-size: 28px;
+      font-size: 26px;
       margin-bottom: 20px;
+      text-align: center;
       color: #003344;
-      text-align: center;
     }
-    h2 {
-      font-size: 22px;
-      margin: 20px 0 10px;
-      color: #005f63;
-      text-align: center;
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
     }
-    p {
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
       margin-bottom: 15px;
-      line-height: 1.6;
+      border: 1px solid #ccc;
+      border-radius: 5px;
       font-size: 16px;
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 10px;
-    }
-    .gallery a {
-      margin: 10px;
-      width: 300px;
-    }
-    .gallery img {
+
+    button {
+      background-color: #f7941d;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
       width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
+
+    button:hover {
+      background-color: #e68a00;
+    }
+
     footer {
       background-color: #006D77;
       color: white;
       text-align: center;
       padding: 15px;
-      margin-top: 40px;
       font-size: 14px;
       line-height: 1.5;
     }
+
     .book-now {
       position: fixed;
       bottom: 0;
@@ -158,8 +180,16 @@
       z-index: 1000;
       text-decoration: none;
     }
-    .book-now:hover { background-color: #e68a00; }
-    @media (min-width: 768px) { .book-now { display: none; } }
+
+    .book-now:hover {
+      background-color: #e68a00;
+    }
+
+    @media (min-width: 768px) {
+      .book-now {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -179,28 +209,42 @@
   <a href="about.html">About</a>
   <a href="services.html">Services</a>
   <a href="contact.html">Contact</a>
-  <a href="appointment.html">Book Appointment</a>
 </nav>
 
 <main>
-  <h1>Superior Plumbing Solutions LLC</h1>
-  <p>We’re a small, family-run business proudly serving South Carolina’s Lowcountry with honest, high-quality plumbing services. We take pride in leaving your home better than we found it — every time.</p>
+  <h1>Book an Appointment</h1>
+  <form action="https://formsubmit.co/SuperiorPlumbingSolutionsLLC@gmail.com" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
 
-  <p>Whether it’s installing a new water heater, fixing a leak, or remodeling your fixtures, our work is always handled by trained, experienced plumbers.</p>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
 
-  <h2>Our Work</h2>
-  <div class="gallery">
-    <a href="#"><img src="FB_IMG_1742889391135.jpg" alt="Plumbing Photo 1" /></a>
-    <a href="#"><img src="FB_IMG_1742889398056.jpg" alt="Plumbing Photo 2" /></a>
-    <a href="#"><img src="FB_IMG_1743001127707.jpg" alt="Plumbing Photo 3" /></a>
-    <a href="#"><img src="FB_IMG_1743001136083.jpg" alt="Plumbing Photo 4" /></a>
-    <a href="#"><img src="FB_IMG_1743001155474.jpg" alt="Plumbing Photo 5" /></a>
-    <a href="#"><img src="FB_IMG_1743001161204.jpg" alt="Plumbing Photo 6" /></a>
-    <a href="#"><img src="FB_IMG_1743001167521.jpg" alt="Plumbing Photo 7" /></a>
-    <a href="#"><img src="Messenger_creation_1C6F78C4-2A81-4FBB-8635-9267D2BEB8C3.jpeg" alt="Plumbing Photo 8" /></a>
-    <a href="#"><img src="Messenger_creation_B1A77419-35B4-4CE0-A103-B72517F0BDAF.jpeg" alt="Plumbing Photo 9" /></a>
-    <a href="#"><img src="Messenger_creation_E1F39BBD-6FC5-45FB-BDA9-A0A8EB5772CE.jpeg" alt="Plumbing Photo 10" /></a>
-  </div>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="service">Service Type</label>
+    <select id="service" name="service" required>
+      <option value="">Select a service</option>
+      <option value="tankless">Tankless Water Heater</option>
+      <option value="traditional">Traditional Water Heater</option>
+      <option value="drain">Drain Cleaning</option>
+      <option value="filtration">Whole-Home Filtration</option>
+      <option value="ro">Reverse Osmosis System</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="date">Preferred Date</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="message">Additional Details</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Request Appointment</button>
+
+    <input type="hidden" name="_next" value="thankyou.html">
+    <input type="hidden" name="_captcha" value="false">
+  </form>
 </main>
 
 <!-- Book Now Button -->
