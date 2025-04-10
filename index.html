@@ -4,18 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Superior Plumbing Solutions LLC | Residential Plumbing in Charleston SC</title>
-  <meta name="description" content="Superior Plumbing Solutions LLC provides honest, high-quality residential plumbing services across Charleston and the Tri-County area. Water heaters, drain cleaning, and more." />
+  <meta name="description" content="Superior Plumbing Solutions LLC provides honest, high-quality residential plumbing services across Charleston and the Tri-County area. Water heaters, drain cleaning, fixture upgrades, and more." />
   <meta name="keywords" content="plumber Charleston SC, plumbing services, residential plumbing, water heater installation, tankless water heater Charleston, drain cleaning, licensed plumber SC" />
   <meta name="author" content="Superior Plumbing Solutions LLC" />
-
-  <!-- Open Graph for Social Sharing -->
   <meta property="og:title" content="Superior Plumbing Solutions LLC - Residential Plumbing in Charleston SC" />
-  <meta property="og:description" content="Top-rated plumbing services including water heaters, drain cleaning, and more across the Charleston Tri-County area." />
+  <meta property="og:description" content="Top-rated plumbing services across the Charleston Tri-County area. Call today for fast, reliable plumbing you can trust." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yourwebsite.github.io/" />
   <meta property="og:image" content="https://yourwebsite.github.io/your-logo.jpg" />
 
-  <!-- Schema.org JSON-LD for Google -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -34,18 +31,20 @@
     "url": "https://yourwebsite.github.io",
     "priceRange": "$$",
     "openingHours": "Mo-Fr 08:00-18:00",
-    "description": "Residential plumbing company serving Charleston and the Tri-County area with water heater installs, drain cleaning, and fixture repair."
+    "description": "Residential plumbing company serving Charleston and the Tri-County area with water heater installs, drain cleaning, fixture replacements, and more."
   }
   </script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: Arial, sans-serif;
       background-color: #f5f5f5;
       padding-bottom: 60px;
     }
+
     header {
       background-color: #006D77;
       color: white;
@@ -60,6 +59,7 @@
       z-index: 1000;
       height: 90px;
     }
+
     .menu-icon, .phone-icon {
       border: 2px solid white;
       padding: 10px;
@@ -69,12 +69,14 @@
       font-size: 24px;
       cursor: pointer;
     }
+
     .logo-text {
       font-size: 20px;
       font-weight: bold;
       text-align: center;
       flex-grow: 1;
     }
+
     #mobileMenu {
       overflow: hidden;
       max-height: 0;
@@ -88,7 +90,9 @@
       display: flex;
       flex-direction: column;
     }
+
     #mobileMenu.open { max-height: 500px; }
+
     #mobileMenu a {
       color: white;
       padding: 16px 20px;
@@ -96,54 +100,89 @@
       text-decoration: none;
       font-weight: bold;
     }
+
     #mobileMenu a:hover { background-color: #005e66; }
-    main {
-      max-width: 900px;
-      margin: 120px auto 0;
-      padding: 20px;
-      color: #003344;
+
+    .hero {
+      background-color: #003344;
+      color: white;
+      text-align: center;
+      padding: 120px 20px 60px;
     }
-    h1 {
-      font-size: 28px;
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
       margin-bottom: 20px;
+    }
+
+    .hero a {
+      background-color: #f7941d;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .hero a:hover {
+      background-color: #e68a00;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .service-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .service-box h3 {
+      margin-bottom: 10px;
       color: #003344;
-      text-align: center;
     }
-    h2 {
-      font-size: 22px;
-      margin: 20px 0 10px;
-      color: #005f63;
-      text-align: center;
+
+    .about {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #003344;
     }
-    p {
+
+    .about h2 {
+      font-size: 24px;
       margin-bottom: 15px;
-      line-height: 1.6;
+      color: #005f63;
+    }
+
+    .about p {
       font-size: 16px;
+      line-height: 1.6;
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 10px;
-    }
-    .gallery a {
-      margin: 10px;
-      width: 300px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
+
     footer {
       background-color: #006D77;
       color: white;
       text-align: center;
       padding: 15px;
-      margin-top: 40px;
+      margin-top: 60px;
       font-size: 14px;
       line-height: 1.5;
     }
+
     .book-now {
       position: fixed;
       bottom: 0;
@@ -158,8 +197,19 @@
       z-index: 1000;
       text-decoration: none;
     }
-    .book-now:hover { background-color: #e68a00; }
-    @media (min-width: 768px) { .book-now { display: none; } }
+
+    .book-now:hover {
+      background-color: #e68a00;
+    }
+
+    @media (min-width: 768px) {
+      .book-now {
+        display: none;
+      }
+      .services {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
   </style>
 </head>
 <body>
@@ -181,28 +231,44 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<main>
-  <h1>Superior Plumbing Solutions LLC</h1>
-  <p>We’re a family-owned and operated plumbing company proudly serving the Charleston Tri-County area and surrounding communities. Our focus is delivering honest, high-quality work that speaks for itself. We take pride in leaving your home better than we found it — every time.</p>
+<section class="hero">
+  <h1>Plumbing You Can Count On</h1>
+  <p>Proudly serving Charleston’s Tri-County & surrounding communities</p>
+  <a href="appointment.html">Book Now</a>
+</section>
 
-  <p>Whether it’s installing a new water heater, fixing a leak, unclogging a drain, or taking care of the plumbing for a new build or remodel — our work is always done by trained, experienced plumbers. We believe good service comes from skill and care — not sales scripts.</p>
-
-  <h2>Our Work</h2>
-  <div class="gallery">
-    <a href="#"><img src="FB_IMG_1742889391135.jpg" alt="Plumbing Photo 1" /></a>
-    <a href="#"><img src="FB_IMG_1742889398056.jpg" alt="Plumbing Photo 2" /></a>
-    <a href="#"><img src="FB_IMG_1743001127707.jpg" alt="Plumbing Photo 3" /></a>
-    <a href="#"><img src="FB_IMG_1743001136083.jpg" alt="Plumbing Photo 4" /></a>
-    <a href="#"><img src="FB_IMG_1743001155474.jpg" alt="Plumbing Photo 5" /></a>
-    <a href="#"><img src="FB_IMG_1743001161204.jpg" alt="Plumbing Photo 6" /></a>
-    <a href="#"><img src="FB_IMG_1743001167521.jpg" alt="Plumbing Photo 7" /></a>
-    <a href="#"><img src="Messenger_creation_1C6F78C4-2A81-4FBB-8635-9267D2BEB8C3.jpeg" alt="Plumbing Photo 8" /></a>
-    <a href="#"><img src="Messenger_creation_B1A77419-35B4-4CE0-A103-B72517F0BDAF.jpeg" alt="Plumbing Photo 9" /></a>
-    <a href="#"><img src="Messenger_creation_E1F39BBD-6FC5-45FB-BDA9-A0A8EB5772CE.jpeg" alt="Plumbing Photo 10" /></a>
+<section class="services">
+  <div class="service-box">
+    <h3>Water Heaters</h3>
+    <p>Tank & tankless installs, flushes, and replacements.</p>
   </div>
-</main>
+  <div class="service-box">
+    <h3>Drain Cleaning</h3>
+    <p>Clogs, backups, and slow drains — handled quickly.</p>
+  </div>
+  <div class="service-box">
+    <h3>Fixture Upgrades</h3>
+    <p>Faucets, sinks, showers, and toilets installed or replaced.</p>
+  </div>
+  <div class="service-box">
+    <h3>Whole Home Shut-Offs</h3>
+    <p>Standard or smart shut-off valve installs and upgrades.</p>
+  </div>
+  <div class="service-box">
+    <h3>Water Filtration</h3>
+    <p>Complete filtration systems and under-sink RO units.</p>
+  </div>
+  <div class="service-box">
+    <h3>Plumbing Remodels</h3>
+    <p>New home builds or bathroom/kitchen plumbing redesigns.</p>
+  </div>
+</section>
 
-<!-- Book Now Button -->
+<section class="about">
+  <h2>Family-Owned & Locally Trusted</h2>
+  <p>We’re a family-run business with almost 15 years of experience delivering high-quality plumbing across Charleston’s Lowcountry. Whether it's a new water heater, unclogging a drain, or a plumbing remodel — everything is done by trained, experienced professionals. No sales pitch. No pressure. Just reliable plumbing done right.</p>
+</section>
+
 <a href="appointment.html" class="book-now">Book Now</a>
 
 <footer>
