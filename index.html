@@ -3,156 +3,191 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Superior Plumbing Solutions LLC | Plumbing in Charleston, SC</title>
-  <meta name="description" content="Superior Plumbing Solutions LLC offers honest, high-quality plumbing services throughout Charleston and the Tri-County area. Specializing in water heaters, filtration, shut-offs, remodels, and more."/>
-  <meta name="keywords" content="plumber Charleston SC, plumbing services, water heater, drain cleaning, pipe repair, smart shut-off, filtration systems, RO systems, new construction plumbing, remodel plumbing"/>
-  <meta name="author" content="Superior Plumbing Solutions LLC"/>
-
+  <title>Superior Plumbing Solutions LLC</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
       margin: 0;
       padding: 0;
+      background-color: #f6f6f6;
     }
     header {
-      background-color: #006D77;
+      background-color: #005f5f;
       color: white;
       padding: 20px;
       text-align: center;
-      font-size: 22px;
-      font-weight: bold;
     }
-    section.intro {
+    .intro {
       padding: 20px;
+      text-align: center;
       background: white;
-      text-align: center;
-      color: #003344;
     }
-    .services-section {
-      background-color: #e9f5f5;
-      padding: 30px 10px;
+    .intro p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1em;
+      color: #333;
     }
-    .services-section h2 {
+    .services {
+      padding: 40px 20px;
+      background: #f0f0f0;
+    }
+    .services h2 {
       text-align: center;
-      color: #004f54;
-      font-size: 26px;
-      margin-bottom: 25px;
+      font-size: 2em;
+      margin-bottom: 40px;
     }
     .service {
-      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
       background: white;
-      margin: 20px auto;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     }
     .service img {
-      width: 100%;
-      border-radius: 10px;
+      max-width: 280px;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 4px;
     }
     .service h3 {
-      margin-top: 15px;
-      color: #006D77;
+      margin-bottom: 10px;
+      color: #005f5f;
     }
     .service p {
-      margin-top: 10px;
-      line-height: 1.6;
+      max-width: 600px;
+      text-align: center;
     }
-    footer {
-      background-color: #006D77;
+    .footer {
+      background-color: #005f5f;
       color: white;
       text-align: center;
-      padding: 15px;
-      font-size: 14px;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    @media (min-width: 700px) {
+      .service {
+        flex-direction: row;
+        text-align: left;
+        gap: 20px;
+      }
+      .service img {
+        margin-bottom: 0;
+      }
     }
   </style>
 </head>
 <body>
 
 <header>
-  Superior Plumbing Solutions LLC
+  <h1>Superior Plumbing Solutions LLC</h1>
 </header>
 
 <section class="intro">
-  <h1>Welcome to Superior Plumbing Solutions LLC</h1>
-  <p>Reliable plumbing by experienced pros — no sales pitch, no gimmicks. We're a family-owned and operated business proudly serving the Charleston Tri-County area. Whether it's a new install, remodel, or repair, our work is always done with honesty and real craftsmanship.</p>
+  <p>
+    At Superior Plumbing Solutions LLC, we believe quality plumbing should come with honest service and dependable results. Based in the Charleston area, we’re a small, family-run company with over 15 years of hands-on experience. We proudly serve Charleston, the Tri-County area, and surrounding communities.
+  </p>
 </section>
 
-<section class="services-section">
+<section class="services">
   <h2>Our Services</h2>
 
   <div class="service">
-    <img src="bigimage2__13702.png" alt="Tankless Water Heater">
-    <h3>Tankless Water Heaters</h3>
-    <p>Efficient, space-saving systems for endless hot water and long-term utility savings.</p>
+    <img src="bigimage2__13702.png" alt="Tankless Water Heater" />
+    <div>
+      <h3>Tankless Water Heater Installation</h3>
+      <p>Enjoy endless hot water and energy efficiency with professional tankless water heater installation and service.</p>
+    </div>
   </div>
 
   <div class="service">
-    <img src="08020908.jpg" alt="Tank Water Heater">
-    <h3>Tank Water Heaters</h3>
-    <p>Reliable traditional heaters, installed or replaced with expert precision.</p>
+    <img src="Screenshot_20250422_151748_Chrome.jpg" alt="Tank Water Heater" />
+    <div>
+      <h3>Tank Water Heater Installation</h3>
+      <p>Standard tank-type water heater installs, replacements, and service to keep your home running smoothly.</p>
+    </div>
   </div>
 
   <div class="service">
-    <img src="clearing-drain-blockage-with-eel.jpg" alt="Drain Cleaning">
-    <h3>Drain Cleaning</h3>
-    <p>Quickly clear blockages using high-grade tools to restore proper flow.</p>
+    <img src="clearing-drain-blockage-with-eel.jpg" alt="Drain Cleaning" />
+    <div>
+      <h3>Drain Cleaning</h3>
+      <p>From slow sinks to major backups, we use pro-grade equipment to get your drains moving again quickly and cleanly.</p>
+    </div>
   </div>
 
   <div class="service">
-    <img src="high_water_pressure_leads_to_leaks.jpg" alt="Leak Detection">
-    <h3>Leak Detection</h3>
-    <p>Find and fix leaks before they become costly damage.</p>
+    <img src="1000047223.jpg" alt="Leak Detection" />
+    <div>
+      <h3>Leak Detection</h3>
+      <p>Find hidden leaks before they cause major damage using advanced diagnostic tools and experienced plumbers.</p>
+    </div>
   </div>
 
   <div class="service">
-    <img src="FloLogic_FLS_G.jpg" alt="Smart Shutoff Valve">
-    <h3>Whole-Home Shut-Offs / Smart Shut-Offs</h3>
-    <p>Protect your home from floods with smart shutoff solutions and manual valves.</p>
+    <img src="FloLogic_FLS_G.jpg" alt="Smart Shut-Off Valve" />
+    <div>
+      <h3>Whole Home Shut-Off Valves</h3>
+      <p>Protect your home with manual or smart shut-off valves to stop leaks before they become disasters.</p>
+    </div>
   </div>
 
   <div class="service">
-    <img src="Whole-home-water-filtration-system.jpg" alt="Filtration System">
-    <h3>Whole-Home Water Filtration</h3>
-    <p>Cleaner, safer water at every tap with a full-home filtration system.</p>
+    <img src="Whole-home-water-filtration-system.jpg" alt="Filtration System" />
+    <div>
+      <h3>Whole Home Water Filtration</h3>
+      <p>Cleaner, safer water throughout your entire home with customized filtration system installs.</p>
+    </div>
   </div>
 
   <div class="service">
-    <img src="Screenshot_20250422_142405_Chrome.jpg" alt="RO System">
-    <h3>Reverse Osmosis (RO) Systems</h3>
-    <p>High-quality drinking water straight from your kitchen sink.</p>
+    <img src="Screenshot_20250422_142405_Chrome.jpg" alt="Reverse Osmosis" />
+    <div>
+      <h3>Reverse Osmosis Systems</h3>
+      <p>Premium drinking water from under-sink RO systems tailored to your home and needs.</p>
+    </div>
   </div>
 
   <div class="service">
-    <img src="Screenshot_20250422_144005_Chrome.jpg" alt="Pipe Repair">
-    <h3>Pipe Repair & Replacement</h3>
-    <p>Replace old or damaged lines to restore safe and reliable plumbing.</p>
+    <img src="Screenshot_20250422_144005_Chrome.jpg" alt="Pipe Repair" />
+    <div>
+      <h3>Pipe Repair & Replacement</h3>
+      <p>We handle everything from small leaks to full repipes with clean, long-lasting work.</p>
+    </div>
   </div>
 
   <div class="service">
-    <img src="Before-After-Faucet5.jpg" alt="Fixture Replacement">
-    <h3>Fixture Replacement</h3>
-    <p>Upgrade your space with sleek, modern fixtures installed properly the first time.</p>
+    <img src="Before-After-Faucet5.jpg" alt="Fixture Replacement" />
+    <div>
+      <h3>Fixture Replacement</h3>
+      <p>Upgrade your kitchen and bath with new faucets, shower heads, toilets, and more—installed right the first time.</p>
+    </div>
   </div>
 
   <div class="service">
-    <img src="Screenshot_20250422_144708_Chrome.jpg" alt="Remodel Plumbing">
-    <h3>Remodels</h3>
-    <p>Plumbing solutions that complement your remodel, big or small.</p>
+    <img src="Screenshot_20250422_144708_Chrome.jpg" alt="Remodel Plumbing" />
+    <div>
+      <h3>Plumbing for Remodels</h3>
+      <p>Remodeling your home? We’ll take care of moving, updating, or extending your plumbing the right way.</p>
+    </div>
   </div>
 
   <div class="service">
-    <img src="Screenshot_20250422_145336_Messages.jpg" alt="New Construction">
-    <h3>New Construction</h3>
-    <p>Full system installs with the right planning, materials, and expertise.</p>
+    <img src="Screenshot_20250422_145336_Messages.jpg" alt="New Construction Plumbing" />
+    <div>
+      <h3>New Construction Plumbing</h3>
+      <p>From rough-in to final trim, we provide reliable plumbing solutions for new builds and additions.</p>
+    </div>
   </div>
 
 </section>
 
-<footer>
-  &copy; 2025 Superior Plumbing Solutions LLC — Family Owned & Operated — Charleston Tri-County Area
-</footer>
+<div class="footer">
+  &copy; 2025 Superior Plumbing Solutions LLC — Charleston, SC | Family Owned & Operated
+</div>
 
 </body>
 </html>
