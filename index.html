@@ -3,126 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Superior Plumbing Solutions LLC | Residential Plumbing in Charleston SC</title>
-  <meta name="description" content="Superior Plumbing Solutions LLC provides honest, high-quality residential plumbing services across Charleston and the Tri-County area. Water heaters, drain cleaning, and more." />
-  <meta name="keywords" content="plumber Charleston SC, plumbing services, water heater installation, drain cleaning, smart shut-off, reverse osmosis, water filtration" />
+  <title>Superior Plumbing Solutions LLC | Charleston Tri-County Plumbing</title>
+  <meta name="description" content="Superior Plumbing Solutions LLC offers honest, high-quality plumbing services including water heater installation, drain cleaning, filtration systems, and more in Charleston and the Tri-County area.">
+  <meta name="keywords" content="plumber Charleston SC, plumbing repair, tankless water heater, whole home filtration, drain cleaning, smart shutoff, licensed plumber Tri-County SC">
   <meta name="author" content="Superior Plumbing Solutions LLC" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      margin: 0;
+      background-color: #f7f7f7;
+      color: #003344;
       padding-bottom: 60px;
     }
+
     header {
       background-color: #006D77;
       color: white;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 30px 20px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      height: 90px;
+      padding: 20px;
     }
-    .menu-icon, .phone-icon {
-      border: 2px solid white;
-      padding: 10px;
-      border-radius: 10px;
-      background-color: transparent;
-      color: white;
-      font-size: 24px;
-      cursor: pointer;
-    }
+
     .logo-text {
       font-size: 20px;
       font-weight: bold;
       text-align: center;
       flex-grow: 1;
     }
-    #mobileMenu {
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.4s ease-in-out;
-      position: fixed;
-      top: 90px;
-      left: 0;
-      width: 100%;
-      background-color: #004f54;
-      z-index: 999;
-      display: flex;
-      flex-direction: column;
-    }
-    #mobileMenu.open { max-height: 500px; }
-    #mobileMenu a {
-      color: white;
-      padding: 16px 20px;
-      border-top: 1px solid rgba(255,255,255,0.1);
+
+    .phone-icon {
+      font-size: 22px;
+      padding: 10px;
+      border: 2px solid white;
+      border-radius: 10px;
       text-decoration: none;
-      font-weight: bold;
+      color: white;
     }
-    #mobileMenu a:hover { background-color: #005e66; }
+
     main {
       max-width: 900px;
-      margin: 120px auto 0;
+      margin: 0 auto;
       padding: 20px;
-      color: #003344;
     }
+
     h1 {
       font-size: 28px;
       margin-bottom: 20px;
-      color: #003344;
       text-align: center;
     }
-    h2 {
-      font-size: 22px;
-      margin: 20px 0 10px;
-      color: #005f63;
-      text-align: center;
-    }
+
     p {
-      margin-bottom: 15px;
-      line-height: 1.6;
       font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
       text-align: center;
     }
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 10px;
+
+    .services-intro {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 40px 0 10px;
+      color: #005f63;
     }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
     .service {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      margin: 10px;
+      background-color: white;
       padding: 20px;
-      width: 260px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       text-align: center;
     }
-    .service h3 {
-      font-size: 18px;
+
+    .service img {
+      width: 80px;
       margin-bottom: 10px;
-      color: #006D77;
     }
+
+    .service h3 {
+      margin: 10px 0 10px;
+      font-size: 18px;
+      color: #004f54;
+    }
+
     .service p {
-      font-size: 14px;
+      font-size: 15px;
       color: #333;
     }
+
     footer {
       background-color: #006D77;
       color: white;
       text-align: center;
       padding: 15px;
-      margin-top: 40px;
       font-size: 14px;
       line-height: 1.5;
     }
+
     .book-now {
       position: fixed;
       bottom: 0;
@@ -137,46 +123,38 @@
       z-index: 1000;
       text-decoration: none;
     }
-    .book-now:hover { background-color: #e68a00; }
-    @media (min-width: 768px) { .book-now { display: none; } }
+
+    .book-now:hover {
+      background-color: #e68a00;
+    }
+
+    @media (min-width: 768px) {
+      .book-now { display: none; }
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="menu-icon" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-  </div>
   <div class="logo-text">Superior Plumbing Solutions LLC</div>
   <a href="tel:8437044393" class="phone-icon">
     <i class="fas fa-phone"></i>
   </a>
 </header>
 
-<nav id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
 <main>
   <h1>Superior Plumbing Solutions LLC</h1>
-  <p>At Superior Plumbing Solutions LLC, we take pride in delivering honest, high-quality plumbing with professionalism and care. Our work speaks for itself—serving homeowners across Charleston and the Tri-County area with reliable solutions they can count on.</p>
+  <p>With a reputation for quality work and honest service, we’re proud to be the family-owned plumbing company trusted by homeowners across Charleston and the Tri-County area.</p>
 
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="service"><h3>Tankless Water Heaters</h3><p>Installation, maintenance, and annual flushing.</p></div>
-    <div class="service"><h3>Traditional Water Heaters</h3><p>Reliable installation and replacement services.</p></div>
-    <div class="service"><h3>Drain Cleaning</h3><p>Fast, effective removal of blockages and buildup.</p></div>
-    <div class="service"><h3>Fixture Replacements</h3><p>Upgrade faucets, toilets, sinks, and more.</p></div>
-    <div class="service"><h3>Whole-Home Shut-Off Valves</h3><p>Gain full control with new shut-off installations.</p></div>
-    <div class="service"><h3>Smart Shut-Off Valves</h3><p>Protect your home with intelligent leak detection.</p></div>
-    <div class="service"><h3>Pipe Repair & Replacement</h3><p>Fix leaks, replace aging pipes, and prevent damage.</p></div>
-    <div class="service"><h3>Water Filtration Systems</h3><p>Improve water quality with full-home filtration.</p></div>
-    <div class="service"><h3>Reverse Osmosis (RO) Systems</h3><p>Clean, filtered water straight from your tap.</p></div>
-    <div class="service"><h3>Remodel Plumbing</h3><p>Expert plumbing setups for home renovations.</p></div>
-    <div class="service"><h3>New Build Plumbing</h3><p>Complete plumbing installations for new construction.</p></div>
+  <div class="services-intro">Our Services</div>
+  <div class="services-grid">
+    <div class="service">
+      <img src="bigimage2__13702.png" alt="Tankless Water Heater">
+      <h3>Tankless Water Heaters</h3>
+      <p>Energy-efficient, endless hot water solutions designed to save space and deliver performance on demand.</p>
+    </div>
+
+    <!-- Add other service blocks here below -->
   </div>
 </main>
 
@@ -186,13 +164,6 @@
   &copy; 2025 Superior Plumbing Solutions, LLC<br>
   Licensed, Bonded & Insured — South Carolina License # RBP44530
 </footer>
-
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("open");
-  }
-</script>
 
 </body>
 </html>
