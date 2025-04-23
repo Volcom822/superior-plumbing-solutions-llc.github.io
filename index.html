@@ -8,37 +8,92 @@
   <meta name="keywords" content="plumber Charleston SC, plumbing services, water heater, drain cleaning, pipe repair, smart shut-off, filtration systems, RO systems, new construction plumbing, remodel plumbing"/>
   <meta name="author" content="Superior Plumbing Solutions LLC"/>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
       font-family: Arial, sans-serif;
       background: #f4f4f4;
-      margin: 0;
-      padding: 0;
+      padding-bottom: 60px;
     }
+
     header {
       background-color: #006D77;
       color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       padding: 20px;
-      text-align: center;
-      font-size: 22px;
-      font-weight: bold;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
     }
+
+    .logo-text {
+      font-size: 18px;
+      font-weight: bold;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .menu-icon, .phone-icon {
+      font-size: 20px;
+      padding: 8px 12px;
+      background-color: transparent;
+      border: 2px solid white;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+    #mobileMenu {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease-in-out;
+      position: fixed;
+      top: 64px;
+      left: 0;
+      width: 100%;
+      background-color: #004f54;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #mobileMenu.open { max-height: 300px; }
+
+    #mobileMenu a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    #mobileMenu a:hover { background-color: #005e66; }
+
     section.intro {
-      padding: 20px;
+      padding: 100px 20px 20px;
       background: white;
       text-align: center;
       color: #003344;
     }
+
     .services-section {
       background-color: #e9f5f5;
       padding: 30px 10px;
     }
+
     .services-section h2 {
       text-align: center;
       color: #004f54;
       font-size: 26px;
       margin-bottom: 25px;
     }
+
     .service {
       max-width: 700px;
       background: white;
@@ -47,18 +102,45 @@
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     .service img {
       width: 100%;
       border-radius: 10px;
     }
+
     .service h3 {
       margin-top: 15px;
       color: #006D77;
     }
+
     .service p {
       margin-top: 10px;
       line-height: 1.6;
     }
+
+    .book-now {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f7941d;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 18px;
+      font-weight: bold;
+      z-index: 1000;
+      text-decoration: none;
+    }
+
+    .book-now:hover {
+      background-color: #e68a00;
+    }
+
+    @media (min-width: 768px) {
+      .book-now { display: none; }
+    }
+
     footer {
       background-color: #006D77;
       color: white;
@@ -71,8 +153,17 @@
 <body>
 
 <header>
-  Superior Plumbing Solutions LLC
+  <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+  <div class="logo-text">Superior Plumbing Solutions LLC</div>
+  <a href="tel:8437044393" class="phone-icon"><i class="fas fa-phone"></i></a>
 </header>
+
+<nav id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
 <section class="intro">
   <h1>Welcome to Superior Plumbing Solutions LLC</h1>
@@ -89,7 +180,7 @@
   </div>
 
   <div class="service">
-    <img src="08020908.jpg" alt="Tank Water Heater">
+    <img src="Screenshot_20250422_151259_Lowe's.jpg" alt="Tank Water Heater">
     <h3>Tank Water Heaters</h3>
     <p>Reliable traditional heaters, installed or replaced with expert precision.</p>
   </div>
@@ -147,12 +238,20 @@
     <h3>New Construction</h3>
     <p>Full system installs with the right planning, materials, and expertise.</p>
   </div>
-
 </section>
+
+<a href="appointment.html" class="book-now">Book Now</a>
 
 <footer>
   &copy; 2025 Superior Plumbing Solutions LLC — Family Owned & Operated — Charleston Tri-County Area
 </footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("open");
+  }
+</script>
 
 </body>
 </html>
