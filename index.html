@@ -7,9 +7,6 @@
   <meta name="description" content="Superior Plumbing Solutions LLC offers honest, high-quality plumbing services throughout Charleston and the Tri-County area. Specializing in water heaters, filtration, shut-offs, remodels, and more."/>
   <meta name="keywords" content="plumber Charleston SC, plumbing services, water heater, drain cleaning, pipe repair, smart shut-off, filtration systems, RO systems, new construction plumbing, remodel plumbing"/>
   <meta name="author" content="Superior Plumbing Solutions LLC"/>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,107 +14,45 @@
       margin: 0;
       padding: 0;
     }
-
     header {
       background-color: #006D77;
       color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       padding: 20px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-    }
-
-    .logo-text {
-      font-size: 20px;
-      font-weight: bold;
       text-align: center;
-      flex-grow: 1;
+      font-size: 22px;
+      font-weight: bold;
     }
-
-    .menu-icon, .phone-icon {
-      border: 2px solid white;
-      padding: 10px;
-      border-radius: 10px;
-      background-color: transparent;
-      color: white;
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    #mobileMenu {
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.4s ease-in-out;
-      position: fixed;
-      top: 68px;
-      left: 0;
-      width: 100%;
+    nav {
       background-color: #004f54;
-      z-index: 999;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
     }
-
-    #mobileMenu.open { max-height: 500px; }
-
-    #mobileMenu a {
+    nav a {
       color: white;
-      padding: 16px 20px;
-      border-top: 1px solid rgba(255,255,255,0.1);
       text-decoration: none;
       font-weight: bold;
     }
-
-    #mobileMenu a:hover { background-color: #005e66; }
-
-    .hero {
-      background-color: #003344;
-      color: white;
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section.intro {
+      padding: 20px;
+      background: white;
       text-align: center;
-      padding: 120px 20px 60px;
+      color: #003344;
     }
-
-    .hero h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .hero-contact-button {
-      background-color: #f7941d;
-      color: white;
-      padding: 12px 25px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-
-    .hero-contact-button:hover {
-      background-color: #e68a00;
-    }
-
     .services-section {
       background-color: #e9f5f5;
       padding: 30px 10px;
-      margin-top: 20px;
     }
-
     .services-section h2 {
       text-align: center;
       color: #004f54;
       font-size: 26px;
       margin-bottom: 25px;
     }
-
     .service {
       max-width: 700px;
       background: white;
@@ -126,57 +61,74 @@
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-
     .service img {
       width: 100%;
       border-radius: 10px;
     }
-
     .service h3 {
       margin-top: 15px;
       color: #006D77;
     }
-
     .service p {
       margin-top: 10px;
       line-height: 1.6;
     }
-
+    .contact-box {
+      background: #ffedd5;
+      padding: 25px;
+      text-align: center;
+      margin: 20px;
+      border-radius: 10px;
+    }
+    .contact-box h3 {
+      margin-bottom: 10px;
+      color: #cc5803;
+    }
+    .contact-box a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #f7941d;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .contact-box a:hover {
+      background-color: #e68a00;
+    }
     footer {
       background-color: #006D77;
       color: white;
       text-align: center;
       padding: 15px;
       font-size: 14px;
-      margin-top: 40px;
     }
   </style>
-
 </head>
 <body>
 
 <header>
-  <div class="menu-icon" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-  </div>
-  <div class="logo-text">Superior Plumbing Solutions LLC</div>
-  <a href="tel:8437044393" class="phone-icon">
-    <i class="fas fa-phone"></i>
-  </a>
+  Superior Plumbing Solutions LLC
 </header>
 
-<nav id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
+<nav>
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
   <a href="services.html">Services</a>
+  <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
 </nav>
 
-<section class="hero">
-  <h1>Proudly serving Charleston and the Tri-County area.</h1>
-  <p>Family-owned, licensed, and focused on real plumbing solutions — not sales tactics.</p>
-  <a href="contact.html" class="hero-contact-button">Contact Us Now</a>
+<section class="intro">
+  <h1>Family-owned and operated. Locally trusted.</h1>
+  <p>We provide reliable plumbing solutions across Charleston, the Tri-County area, and surrounding communities — focused on solutions, not sales tactics.</p>
 </section>
+
+<div class="contact-box">
+  <h3>Need help now?</h3>
+  <p>Contact us today to schedule service or request a quote.</p>
+  <a href="contact.html">Contact Us</a>
+</div>
 
 <section class="services-section">
   <h2>Our Services</h2>
@@ -184,86 +136,80 @@
   <div class="service">
     <img src="bigimage2__13702.png" alt="Tankless Water Heater">
     <h3>Tankless Water Heaters</h3>
-    <p>Efficient, space-saving systems that deliver long-term performance and lower energy costs.</p>
+    <p>Efficient, space-saving systems that deliver consistent hot water and long-term savings.</p>
   </div>
 
   <div class="service">
-    <img src="08020908.jpg" alt="Tank Water Heater">
+    <img src="Screenshot_20250422_151259_Lowe's.jpg" alt="Tank Water Heater">
     <h3>Tank Water Heaters</h3>
-    <p>Reliable traditional water heaters installed or replaced with expert precision.</p>
+    <p>Reliable traditional heaters, installed or replaced with expert precision for dependable performance.</p>
   </div>
 
   <div class="service">
     <img src="clearing-drain-blockage-with-eel.jpg" alt="Drain Cleaning">
     <h3>Drain Cleaning</h3>
-    <p>Clogged or slow drains? We use professional equipment to get them flowing fast — and offer camera inspections when needed.</p>
+    <p>We clear tough clogs fast using commercial-grade equipment and proven methods.</p>
   </div>
 
   <div class="service">
     <img src="Drain-Camera_Feature-Image_2.jpg" alt="Camera Inspection">
-    <h3>Camera Inspection</h3>
-    <p>Pinpoint issues inside your drain lines using state-of-the-art camera technology before digging or guessing.</p>
+    <h3>Camera Inspections</h3>
+    <p>High-definition pipe inspections to find the true source of stubborn plumbing problems.</p>
   </div>
 
   <div class="service">
     <img src="high_water_pressure_leads_to_leaks-1024x1024.png" alt="Leak Detection">
     <h3>Leak Detection</h3>
-    <p>Find hidden water leaks fast and stop costly water damage before it spreads.</p>
+    <p>Pinpoint hidden leaks quickly to prevent costly water damage and protect your property.</p>
   </div>
 
   <div class="service">
     <img src="FloLogic_FLS_G.jpg" alt="Smart Shutoff Valve">
     <h3>Whole-Home Shut-Offs / Smart Shut-Offs</h3>
-    <p>Protect your home from flood damage with smart leak detection shutoff valves or upgraded manual shut-offs.</p>
+    <p>Install smart or manual shut-off valves to safeguard your home from unexpected leaks or floods.</p>
   </div>
 
   <div class="service">
     <img src="Whole-home-water-filtration-system.jpg" alt="Filtration System">
     <h3>Whole-Home Water Filtration</h3>
-    <p>Remove iron, sediment, chlorine, and other contaminants for safer, cleaner water at every tap.</p>
+    <p>Clean, filtered water throughout your home for healthier showers, laundry, and drinking water.</p>
   </div>
 
   <div class="service">
     <img src="Screenshot_20250422_142405_Chrome.jpg" alt="RO System">
     <h3>Reverse Osmosis (RO) Systems</h3>
-    <p>High-purity water filtration systems that fit neatly under your kitchen sink for fresh-tasting water.</p>
+    <p>Enjoy ultra-purified water at your kitchen sink with a professionally installed RO unit.</p>
   </div>
 
   <div class="service">
     <img src="Screenshot_20250422_144005_Chrome.jpg" alt="Pipe Repair">
     <h3>Pipe Repair & Replacement</h3>
-    <p>Fix corroded, cracked, or broken plumbing lines using long-lasting materials and best practices.</p>
+    <p>Restore water flow and pressure by repairing or replacing old, corroded, or damaged piping.</p>
   </div>
 
   <div class="service">
     <img src="Before-After-Faucet5.jpg" alt="Fixture Replacement">
     <h3>Fixture Replacement</h3>
-    <p>Upgrade old or leaking faucets, toilets, or shower valves with quality fixtures that are built to last.</p>
+    <p>Swap out outdated faucets, toilets, and showerheads for reliable, stylish upgrades.</p>
   </div>
 
   <div class="service">
     <img src="Screenshot_20250422_144708_Chrome.jpg" alt="Remodel Plumbing">
     <h3>Remodels</h3>
-    <p>From simple upgrades to full gut renovations, we handle your plumbing remodel with clean, code-compliant work.</p>
+    <p>We work closely with your vision to reroute and install plumbing for kitchens, baths, and more.</p>
   </div>
 
   <div class="service">
     <img src="Screenshot_20250422_145336_Messages.jpg" alt="New Construction">
     <h3>New Construction</h3>
-    <p>Professional new construction plumbing for residential builds, additions, and custom homes.</p>
+    <p>Complete plumbing systems for new builds, installed from rough-in to final fixture.</p>
   </div>
+
 </section>
 
 <footer>
   &copy; 2025 Superior Plumbing Solutions LLC — Family Owned & Operated — Charleston Tri-County Area
 </footer>
-
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("open");
-  }
-</script>
 
 </body>
 </html>
