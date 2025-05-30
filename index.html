@@ -9,14 +9,13 @@
   <meta name="author" content="Superior Plumbing Solutions LLC"/>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
 
+  <style>
     body {
       font-family: Arial, sans-serif;
       background: #f4f4f4;
       margin: 0;
-      padding-bottom: 60px;
+      padding: 0;
     }
 
     header {
@@ -33,29 +32,29 @@
       z-index: 1000;
     }
 
+    .logo-text {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      flex-grow: 1;
+    }
+
     .menu-icon, .phone-icon {
       border: 2px solid white;
       padding: 10px;
       border-radius: 10px;
       background-color: transparent;
       color: white;
-      font-size: 22px;
+      font-size: 24px;
       cursor: pointer;
-    }
-
-    .logo-text {
-      font-size: 18px;
-      font-weight: bold;
-      text-align: center;
-      flex-grow: 1;
     }
 
     #mobileMenu {
       overflow: hidden;
       max-height: 0;
-      transition: max-height 0.3s ease-in-out;
+      transition: max-height 0.4s ease-in-out;
       position: fixed;
-      top: 75px;
+      top: 68px;
       left: 0;
       width: 100%;
       background-color: #004f54;
@@ -76,16 +75,40 @@
 
     #mobileMenu a:hover { background-color: #005e66; }
 
-    section.intro {
-      padding: 130px 20px 30px;
-      background: white;
+    .hero {
+      background-color: #003344;
+      color: white;
       text-align: center;
-      color: #003344;
+      padding: 120px 20px 60px;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero-contact-button {
+      background-color: #f7941d;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .hero-contact-button:hover {
+      background-color: #e68a00;
     }
 
     .services-section {
       background-color: #e9f5f5;
       padding: 30px 10px;
+      margin-top: 20px;
     }
 
     .services-section h2 {
@@ -125,32 +148,10 @@
       text-align: center;
       padding: 15px;
       font-size: 14px;
-      line-height: 1.5;
-    }
-
-    .book-now {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: #f7941d;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 18px;
-      font-weight: bold;
-      z-index: 1000;
-      text-decoration: none;
-    }
-
-    .book-now:hover { background-color: #e68a00; }
-
-    @media (min-width: 768px) {
-      .book-now {
-        display: none;
-      }
+      margin-top: 40px;
     }
   </style>
+
 </head>
 <body>
 
@@ -171,9 +172,10 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<section class="intro">
-  <h1>Family-owned and operated. Locally trusted.</h1>
-  <p>We provide reliable plumbing solutions across Charleston, the Tri-County area, and surrounding communities — with quality work done by licensed professionals, not pushy salespeople.</p>
+<section class="hero">
+  <h1>Proudly serving Charleston and the Tri-County area.</h1>
+  <p>Family-owned, licensed, and focused on real plumbing solutions — not sales tactics.</p>
+  <a href="contact.html" class="hero-contact-button">Contact Us Now</a>
 </section>
 
 <section class="services-section">
@@ -182,82 +184,78 @@
   <div class="service">
     <img src="bigimage2__13702.png" alt="Tankless Water Heater">
     <h3>Tankless Water Heaters</h3>
-    <p>Energy-efficient systems that provide continuous hot water while saving space and lowering utility bills.</p>
+    <p>Efficient, space-saving systems that deliver long-term performance and lower energy costs.</p>
   </div>
 
   <div class="service">
-    <img src="Screenshot_20250422_151259_Lowe's.jpg" alt="Tank Water Heater">
+    <img src="08020908.jpg" alt="Tank Water Heater">
     <h3>Tank Water Heaters</h3>
-    <p>Reliable and proven. We install and replace tank-type water heaters to keep your home running smoothly.</p>
+    <p>Reliable traditional water heaters installed or replaced with expert precision.</p>
   </div>
 
   <div class="service">
     <img src="clearing-drain-blockage-with-eel.jpg" alt="Drain Cleaning">
     <h3>Drain Cleaning</h3>
-    <p>From stubborn clogs to full backups, we clear drains efficiently and get your plumbing flowing fast.</p>
+    <p>Clogged or slow drains? We use professional equipment to get them flowing fast — and offer camera inspections when needed.</p>
+  </div>
+
+  <div class="service">
+    <img src="Drain-Camera_Feature-Image_2.jpg" alt="Camera Inspection">
+    <h3>Camera Inspection</h3>
+    <p>Pinpoint issues inside your drain lines using state-of-the-art camera technology before digging or guessing.</p>
   </div>
 
   <div class="service">
     <img src="high_water_pressure_leads_to_leaks-1024x1024.png" alt="Leak Detection">
     <h3>Leak Detection</h3>
-    <p>We locate hidden leaks with precision tools and fix them before they become a major headache.</p>
-  </div>
-
-  <div class="service">
-    <img src="Drain-Camera_Feature-Image_2.jpg" alt="Camera Inspection">
-    <h3>Camera Inspections</h3>
-    <p>Get a clear view inside your pipes with high-resolution inspections that pinpoint issues fast.</p>
+    <p>Find hidden water leaks fast and stop costly water damage before it spreads.</p>
   </div>
 
   <div class="service">
     <img src="FloLogic_FLS_G.jpg" alt="Smart Shutoff Valve">
     <h3>Whole-Home Shut-Offs / Smart Shut-Offs</h3>
-    <p>Protect your home from water damage with manual and app-enabled shutoff systems.</p>
+    <p>Protect your home from flood damage with smart leak detection shutoff valves or upgraded manual shut-offs.</p>
   </div>
 
   <div class="service">
     <img src="Whole-home-water-filtration-system.jpg" alt="Filtration System">
     <h3>Whole-Home Water Filtration</h3>
-    <p>Cleaner, safer water at every tap with a complete filtration setup tailored to your home.</p>
+    <p>Remove iron, sediment, chlorine, and other contaminants for safer, cleaner water at every tap.</p>
   </div>
 
   <div class="service">
     <img src="Screenshot_20250422_142405_Chrome.jpg" alt="RO System">
     <h3>Reverse Osmosis (RO) Systems</h3>
-    <p>Enjoy crisp, purified drinking water straight from your kitchen sink with an RO unit.</p>
+    <p>High-purity water filtration systems that fit neatly under your kitchen sink for fresh-tasting water.</p>
   </div>
 
   <div class="service">
     <img src="Screenshot_20250422_144005_Chrome.jpg" alt="Pipe Repair">
     <h3>Pipe Repair & Replacement</h3>
-    <p>We fix broken, corroded, or outdated pipes with modern, long-lasting materials and clean work.</p>
+    <p>Fix corroded, cracked, or broken plumbing lines using long-lasting materials and best practices.</p>
   </div>
 
   <div class="service">
     <img src="Before-After-Faucet5.jpg" alt="Fixture Replacement">
     <h3>Fixture Replacement</h3>
-    <p>Upgrade your sinks, toilets, and showers with stylish new fixtures done right the first time.</p>
+    <p>Upgrade old or leaking faucets, toilets, or shower valves with quality fixtures that are built to last.</p>
   </div>
 
   <div class="service">
     <img src="Screenshot_20250422_144708_Chrome.jpg" alt="Remodel Plumbing">
     <h3>Remodels</h3>
-    <p>From bathroom refreshes to full-kitchen makeovers, we help bring your vision to life.</p>
+    <p>From simple upgrades to full gut renovations, we handle your plumbing remodel with clean, code-compliant work.</p>
   </div>
 
   <div class="service">
     <img src="Screenshot_20250422_145336_Messages.jpg" alt="New Construction">
     <h3>New Construction</h3>
-    <p>We handle all plumbing needs for new home builds with top-to-bottom expertise and planning.</p>
+    <p>Professional new construction plumbing for residential builds, additions, and custom homes.</p>
   </div>
-
 </section>
 
-<a href="appointment.html" class="book-now">Book Now</a>
-
 <footer>
-  &copy; 2025 Superior Plumbing Solutions, LLC<br>
-  Licensed, Bonded & Insured — South Carolina License # RBP44530
+  &copy; 2025 Superior Plumbing Solutions LLC — Family Owned & Operated — Charleston Tri-County Area
 </footer>
 
 <script>
