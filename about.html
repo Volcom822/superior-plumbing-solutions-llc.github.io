@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us | Superior Plumbing Solutions LLC</title>
   <meta name="description" content="Learn more about Superior Plumbing Solutions LLC — a trusted residential plumber serving the Charleston Tri-County area. Family-owned, honest, and skilled." />
-  <meta name="keywords" content="plumber Charleston SC, plumbing company, family owned plumber, residential plumber South Carolina, honest plumbing services" />
   <meta name="author" content="Superior Plumbing Solutions LLC" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -20,12 +19,8 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-    }
-
-    body {
       font-family: Arial, sans-serif;
       background-color: #f5f5f5;
-      padding-bottom: 60px;
     }
 
     header {
@@ -95,7 +90,6 @@
       margin: 120px auto 0;
       padding: 20px;
       color: #003344;
-      flex: 1;
     }
 
     h1 {
@@ -107,50 +101,45 @@
 
     p {
       margin-bottom: 20px;
-      line-height: 1.7;
-      font-size: 18px;
+      line-height: 1.6;
+      font-size: 17px;
     }
 
-    .reviews {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    .reviews-section {
       margin-top: 40px;
     }
 
-    .review {
+    .review-card {
       background: white;
       border-radius: 10px;
       padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 700px;
       display: flex;
-      gap: 15px;
-    }
-
-    .review img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .review-content {
-      flex: 1;
+      flex-direction: column;
     }
 
     .review-header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .review-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin-right: 15px;
+    }
+
+    .review-info {
+      flex: 1;
     }
 
     .review-name {
       font-weight: bold;
-      font-size: 16px;
-    }
-
-    .review-stars {
-      color: #fbbc04;
     }
 
     .review-date {
@@ -158,9 +147,13 @@
       color: #666;
     }
 
+    .review-stars {
+      color: #f5b50a;
+      margin-bottom: 10px;
+    }
+
     .review-text {
-      margin-top: 10px;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.5;
     }
 
@@ -170,6 +163,12 @@
       text-align: center;
       padding: 15px;
       font-size: 14px;
+      margin-top: auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   </style>
 </head>
@@ -196,52 +195,54 @@
   <h1>About Superior Plumbing Solutions LLC</h1>
 
   <p>Welcome to Superior Plumbing Solutions LLC — where dependable service is backed by years of hands-on experience.</p>
-
   <p>Based in the Charleston area of South Carolina, we’re a small, family-owned and operated business focused on delivering honest work.</p>
-
   <p>After nearly 15 years in the plumbing trade, our founder Chris started Superior Plumbing Solutions with a simple goal: provide skilled, professional service — without the sales pitch.</p>
-
   <p>We’re here to offer straightforward solutions, clear communication, and top-tier workmanship for homeowners across the Charleston Tri-County area and surrounding communities.</p>
-
   <p>Whether it’s a water heater install, unclogging a drain, fixture upgrade, or a full home repipe, we take pride in getting the job done right — the first time.</p>
 
-  <div class="reviews">
-    <div class="review">
-      <img src="https://ssl.gstatic.com/localreviews/avatars/2x/avatar_generic_64.png" alt="Google Avatar">
-      <div class="review-content">
-        <div class="review-header">
+  <section class="reviews-section">
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-avatar"><img src="https://i.imgur.com/uB0cz2b.png" alt="Avatar" style="width: 50px; height: 50px; border-radius: 50%;"></div>
+        <div class="review-info">
           <div class="review-name">Carley Connolly</div>
-          <div class="review-stars">★★★★★</div>
+          <div class="review-date">4 weeks ago</div>
         </div>
-        <div class="review-date">May 2024</div>
-        <div class="review-text">Fast, professional, and genuinely cared about doing the job right. Highly recommend this company to anyone in the Charleston area.</div>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">
+        Excellent service, pricing and expediently done. Chris is very nice, easy to work with and knowledgeable about plumbing. He was there for us when all of the plumbing inside and outside our historic home went totally kaput just before Christmas! Definitely an excellent guy. So glad we found him!
       </div>
     </div>
 
-    <div class="review">
-      <img src="https://ssl.gstatic.com/localreviews/avatars/2x/avatar_generic_64.png" alt="Google Avatar">
-      <div class="review-content">
-        <div class="review-header">
-          <div class="review-name">James H.</div>
-          <div class="review-stars">★★★★★</div>
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-avatar"><img src="https://i.imgur.com/t9HFb6D.png" alt="Avatar" style="width: 50px; height: 50px; border-radius: 50%;"></div>
+        <div class="review-info">
+          <div class="review-name">Bryan Nobles</div>
+          <div class="review-date">4 months ago</div>
         </div>
-        <div class="review-date">April 2024</div>
-        <div class="review-text">Superior Plumbing lived up to the name. They diagnosed and fixed our leak quickly and were super respectful throughout the process.</div>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">
+        Chris was the hero today. I had clogged lines for a few weeks and he figured it out and got us flowing again, even in the rain. Thank you so much Chris!
       </div>
     </div>
 
-    <div class="review">
-      <img src="https://ssl.gstatic.com/localreviews/avatars/2x/avatar_generic_64.png" alt="Google Avatar">
-      <div class="review-content">
-        <div class="review-header">
-          <div class="review-name">Lindsey C.</div>
-          <div class="review-stars">★★★★★</div>
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-avatar"><img src="https://i.imgur.com/jB7uQEp.png" alt="Avatar" style="width: 50px; height: 50px; border-radius: 50%;"></div>
+        <div class="review-info">
+          <div class="review-name">Dean Ferreira</div>
+          <div class="review-date">4 weeks ago</div>
         </div>
-        <div class="review-date">March 2024</div>
-        <div class="review-text">They replaced our water heater and upgraded our shutoff valve. Super clean install and great communication. I wouldn’t call anyone else.</div>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">
+        Prompt, reliable and honest company. They take care of your problem and not just try to sell you something else.
       </div>
     </div>
-  </div>
+  </section>
 </main>
 
 <footer>
