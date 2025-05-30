@@ -7,8 +7,38 @@
   <meta name="description" content="Learn more about Superior Plumbing Solutions LLC — a trusted residential plumber serving the Charleston Tri-County area. Family-owned, honest, and skilled." />
   <meta name="keywords" content="plumber Charleston SC, plumbing company, family owned plumber, residential plumber South Carolina, honest plumbing services" />
   <meta name="author" content="Superior Plumbing Solutions LLC" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="About Superior Plumbing Solutions LLC" />
+  <meta property="og:description" content="Get to know Superior Plumbing Solutions — a local, family-run plumbing company serving Charleston, SC and surrounding areas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourwebsite.github.io/about.html" />
+  <meta property="og:image" content="https://yourwebsite.github.io/your-logo.jpg" />
+
+  <!-- Schema markup for local business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Superior Plumbing Solutions LLC",
+    "image": "https://yourwebsite.github.io/your-logo.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Charleston",
+      "addressRegion": "SC",
+      "postalCode": "29401",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-843-704-4393",
+    "email": "SuperiorPlumbingSolutionsLLC@gmail.com",
+    "url": "https://yourwebsite.github.io",
+    "priceRange": "$$",
+    "openingHours": "Mo-Fr 08:00-18:00",
+    "description": "Learn more about Superior Plumbing Solutions LLC — your trusted, licensed plumber serving the Charleston Tri-County area and surrounding communities."
+  }
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     * {
       box-sizing: border-box;
@@ -90,11 +120,11 @@
     }
 
     main {
-      flex: 1;
       max-width: 900px;
       margin: 120px auto 0;
       padding: 20px;
       color: #003344;
+      flex: 1;
     }
 
     h1 {
@@ -110,37 +140,52 @@
       font-size: 17px;
     }
 
-    .reviews-container {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      margin-top: 40px;
-    }
-
-    .review-box {
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .review-box .stars {
-      color: #ffc107;
-      margin-bottom: 10px;
-    }
-
     footer {
       background-color: #006D77;
       color: white;
       text-align: center;
       padding: 15px;
       font-size: 14px;
-      margin-top: 40px;
+      line-height: 1.5;
     }
 
     a {
       text-decoration: none;
       color: inherit;
+    }
+
+    .reviews-section {
+      background-color: #f0f8f8;
+      padding: 40px 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    .reviews-section h2 {
+      text-align: center;
+      color: #003344;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .review {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .review .stars {
+      color: #FFD700;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .review p {
+      font-size: 16px;
+      color: #003344;
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -167,25 +212,33 @@
   <h1>About Superior Plumbing Solutions LLC</h1>
 
   <p>Welcome to Superior Plumbing Solutions LLC — where dependable service is backed by years of hands-on experience.</p>
+
   <p>Based in the Charleston area of South Carolina, we’re a small, family-owned and operated business focused on delivering honest work.</p>
+
   <p>After nearly 15 years in the plumbing trade, our founder Chris started Superior Plumbing Solutions with a simple goal: provide skilled, professional service — without the sales pitch.</p>
+
   <p>We’re here to offer straightforward solutions, clear communication, and top-tier workmanship for homeowners across the Charleston Tri-County area and surrounding communities.</p>
+
   <p>Whether it’s a water heater install, unclogging a drain, fixture upgrade, or a full home repipe, we take pride in getting the job done right — the first time.</p>
 
-  <div class="reviews-container">
-    <div class="review-box">
+  <section class="reviews-section">
+    <h2>What Our Customers Are Saying</h2>
+
+    <div class="review">
       <div class="stars">★★★★★</div>
-      <p>Excellent service, pricing and expediently done. Chris is very nice, easy to work with and knowledgeable about plumbing. He was there for us when all of the plumbing inside and outside our historic home went totally kaput just before Christmas! We feel like we have found a gem and refer him to friends and neighbors alike. We are using him now for upgrading master bath. Definitely an excellent guy. So glad we found him!</p>
+      <p>Excellent service, pricing and expediently done. Chris is very nice, easy to work with and knowledgeable about plumbing. He was there for us when all of the plumbing inside and outside our historic home went totally kaput just before Christmas! We feel like we have found a gem and refer him to friends and neighbors alike. We are using him now for upgrading master bath. Definitely an excellent guy. So glad we found him!<br><strong>– Carley Connolly</strong></p>
     </div>
-    <div class="review-box">
+
+    <div class="review">
       <div class="stars">★★★★★</div>
-      <p>Chris was the hero today , I have had clogged lines for a few weeks and figured it out and got us flowing again , on top of that it was raining and cold out there today on a Saturday so thank you so much Chris will call you if I need any other plumbing services</p>
+      <p>Chris was the hero today , I have had clogged lines for a few weeks and figured it out and got us flowing again , on top of that it was raining and cold out there today on a Saturday so thank you so much Chris will call you if I need any other plumbing services<br><strong>– Bryan Nobles</strong></p>
     </div>
-    <div class="review-box">
+
+    <div class="review">
       <div class="stars">★★★★★</div>
-      <p>Prompt, reliable and honest company. They take care of your problem and not just try to sell you something else.</p>
+      <p>Prompt, reliable and honest company. They take care of your problem and not just try to sell you something else.<br><strong>– Dean Ferreira</strong></p>
     </div>
-  </div>
+  </section>
 </main>
 
 <footer>
@@ -195,8 +248,8 @@
 
 <script>
   function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("open");
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
   }
 </script>
 
