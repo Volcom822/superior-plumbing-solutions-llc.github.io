@@ -3,53 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Plumbing Services | Superior Plumbing Solutions LLC</title>
-  <meta name="description" content="Superior Plumbing Solutions LLC offers expert residential plumbing services including water heaters, drain cleaning, shut-off valves, fixture upgrades, and more." />
-  <meta name="keywords" content="plumbing services Charleston, water heater installation, drain cleaning SC, smart shut-off valves, plumbing repairs, fixture upgrades" />
-  <meta name="author" content="Superior Plumbing Solutions LLC" />
+  <title>Superior Plumbing Solutions LLC | Plumbing in Charleston, SC</title>
+  <meta name="description" content="Superior Plumbing Solutions LLC offers honest, high-quality plumbing services throughout Charleston and the Tri-County area. Specializing in water heaters, filtration, shut-offs, remodels, and more."/>
+  <meta name="keywords" content="plumber Charleston SC, plumbing services, water heater, drain cleaning, pipe repair, smart shut-off, filtration systems, RO systems, new construction plumbing, remodel plumbing"/>
+  <meta name="author" content="Superior Plumbing Solutions LLC"/>
 
-  <!-- Social Media Sharing -->
-  <meta property="og:title" content="Plumbing Services | Superior Plumbing Solutions LLC" />
-  <meta property="og:description" content="Explore our residential plumbing services — from water heaters to smart shut-off valves. Serving Charleston and surrounding areas." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourwebsite.github.io/services.html" />
-  <meta property="og:image" content="https://yourwebsite.github.io/your-logo.jpg" />
-
-  <!-- Local Business Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Superior Plumbing Solutions LLC",
-    "image": "https://yourwebsite.github.io/your-logo.jpg",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Charleston",
-      "addressRegion": "SC",
-      "postalCode": "29401",
-      "addressCountry": "US"
-    },
-    "telephone": "+1-843-704-4393",
-    "email": "SuperiorPlumbingSolutionsLLC@gmail.com",
-    "url": "https://yourwebsite.github.io",
-    "priceRange": "$$",
-    "openingHours": "Mo-Fr 08:00-18:00",
-    "description": "Residential plumbing services for Charleston Tri-County including water heater installation, fixture upgrades, drain cleaning, and smart shut-off valves."
-  }
-  </script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      padding-bottom: 60px;
+      background: #f4f4f4;
     }
 
     header {
@@ -58,86 +22,119 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 30px 20px;
+      padding: 20px;
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
-      z-index: 1000;
       height: 90px;
+      z-index: 1000;
     }
 
     .menu-icon, .phone-icon {
-      border: 2px solid white;
-      padding: 10px;
-      border-radius: 10px;
-      background-color: transparent;
-      color: white;
       font-size: 24px;
+      padding: 10px;
+      background: transparent;
+      border: 2px solid white;
+      border-radius: 10px;
+      color: white;
       cursor: pointer;
     }
 
     .logo-text {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
-      text-align: center;
       flex-grow: 1;
+      text-align: center;
     }
 
     #mobileMenu {
       overflow: hidden;
       max-height: 0;
       transition: max-height 0.4s ease-in-out;
+      background-color: #004f54;
       position: fixed;
       top: 90px;
       left: 0;
       width: 100%;
-      background-color: #004f54;
       z-index: 999;
       display: flex;
       flex-direction: column;
     }
 
-    #mobileMenu.open {
-      max-height: 500px;
-    }
+    #mobileMenu.open { max-height: 500px; }
 
     #mobileMenu a {
       color: white;
       padding: 16px 20px;
-      border-top: 1px solid rgba(255,255,255,0.1);
       text-decoration: none;
+      border-top: 1px solid rgba(255,255,255,0.1);
       font-weight: bold;
     }
 
-    #mobileMenu a:hover {
-      background-color: #005e66;
-    }
+    #mobileMenu a:hover { background-color: #005e66; }
 
-    main {
-      max-width: 900px;
-      margin: 120px auto 0;
-      padding: 20px;
-      color: #003344;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 20px;
+    section.intro {
+      margin-top: 90px;
+      padding: 30px 20px;
+      background: white;
       text-align: center;
       color: #003344;
     }
 
-    h2 {
-      font-size: 22px;
-      margin-top: 30px;
-      color: #005f63;
+    .services-section {
+      background-color: #e9f5f5;
+      padding: 30px 10px;
     }
 
-    p {
-      margin-bottom: 15px;
+    .services-section h2 {
+      text-align: center;
+      color: #004f54;
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
+
+    .service {
+      max-width: 700px;
+      background: white;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .service img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .service h3 {
+      margin-top: 15px;
+      color: #006D77;
+    }
+
+    .service p {
+      margin-top: 10px;
       line-height: 1.6;
-      font-size: 16px;
+    }
+
+    .book-now {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f7941d;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 18px;
+      font-weight: bold;
+      z-index: 1000;
+      text-decoration: none;
+    }
+
+    .book-now:hover {
+      background-color: #e68a00;
     }
 
     footer {
@@ -145,14 +142,12 @@
       color: white;
       text-align: center;
       padding: 15px;
-      margin-top: 40px;
       font-size: 14px;
-      line-height: 1.5;
+      margin-top: 60px;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
+    @media (min-width: 768px) {
+      .book-now { display: none; }
     }
   </style>
 </head>
@@ -175,28 +170,92 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<main>
-  <h1>Our Plumbing Services</h1>
+<section class="intro">
+  <h1>Family-Owned. Locally Trusted.</h1>
+  <p>Family-owned and operated. Locally trusted. We provide reliable plumbing solutions across Charleston, the Tri-County area, and surrounding communities — with quality work done by licensed professionals, not pushy salespeople.</p>
+</section>
 
-  <h2>Water Heater Installation & Replacement</h2>
-  <p>We install and replace both traditional tank and energy-efficient tankless water heaters. Whether you're upgrading or replacing a failing unit, we'll guide you to the right solution.</p>
+<section class="services-section">
+  <h2>Our Services</h2>
 
-  <h2>Drain Cleaning</h2>
-  <p>Clogged drain? Slow-moving water? We use professional tools to clear blockages and get your system flowing again — safely and effectively.</p>
+  <div class="service">
+    <img src="bigimage2__13702.png" alt="Tankless Water Heater">
+    <h3>Tankless Water Heaters</h3>
+    <p>Energy-efficient, space-saving systems that provide continuous hot water while lowering utility costs over time.</p>
+  </div>
 
-  <h2>Fixture Upgrades & Replacements</h2>
-  <p>Modernize your kitchen and bathrooms with updated faucets, sinks, toilets, and more. We’ll handle the removal, installation, and testing to ensure everything works perfectly.</p>
+  <div class="service">
+    <img src="Screenshot_20250422_151259_Lowe's.jpg" alt="Tank Water Heater">
+    <h3>Tank Water Heaters</h3>
+    <p>Traditional systems installed or replaced to ensure consistent performance and reliable hot water in your home.</p>
+  </div>
 
-  <h2>Whole Home Shut-Off Valves</h2>
-  <p>We install traditional and smart whole-home shut-off valves to help you take control of your water system. Whether you're protecting against leaks or want the convenience of app-based shutoff, we’ve got the right setup for your needs.</p>
+  <div class="service">
+    <img src="clearing-drain-blockage-with-eel.jpg" alt="Drain Cleaning">
+    <h3>Drain Cleaning</h3>
+    <p>Remove clogs, roots, and buildup with professional equipment — for clean, free-flowing drains and peace of mind.</p>
+  </div>
 
-  <h2>Remodels & New Construction</h2>
-  <p>Building a home or renovating one? We work closely with homeowners and contractors to install plumbing systems that are code-compliant, long-lasting, and built to handle your family’s daily needs.</p>
-</main>
+  <div class="service">
+    <img src="Drain-Camera_Feature-Image_2.jpg" alt="Camera Inspection">
+    <h3>Camera Inspections</h3>
+    <p>We inspect what we clear — find the root cause of problems and ensure long-term solutions, not quick fixes.</p>
+  </div>
+
+  <div class="service">
+    <img src="high_water_pressure_leads_to_leaks-1024x1024.png" alt="Leak Detection">
+    <h3>Leak Detection</h3>
+    <p>From slab leaks to slow drips — we locate and repair water losses before they cause major damage.</p>
+  </div>
+
+  <div class="service">
+    <img src="FloLogic_FLS_G.jpg" alt="Shut-Off Valve">
+    <h3>Whole-Home Shut-Offs / Smart Shut-Offs</h3>
+    <p>Manual or smart shut-off valve installs that protect your home from floods and costly repairs.</p>
+  </div>
+
+  <div class="service">
+    <img src="Whole-home-water-filtration-system.jpg" alt="Filtration System">
+    <h3>Whole-Home Water Filtration</h3>
+    <p>Eliminate iron, sulfur, chlorine, and contaminants with customized filtration systems built to fit your home.</p>
+  </div>
+
+  <div class="service">
+    <img src="Screenshot_20250422_142405_Chrome.jpg" alt="Reverse Osmosis System">
+    <h3>Reverse Osmosis (RO) Systems</h3>
+    <p>Under-sink RO filters that deliver ultra-clean, bottled-quality water straight from your kitchen faucet.</p>
+  </div>
+
+  <div class="service">
+    <img src="Screenshot_20250422_144005_Chrome.jpg" alt="Pipe Repair">
+    <h3>Pipe Repair & Replacement</h3>
+    <p>Fix corroded, leaking, or damaged water lines to restore full functionality and water safety.</p>
+  </div>
+
+  <div class="service">
+    <img src="Before-After-Faucet5.jpg" alt="Fixture Replacement">
+    <h3>Fixture Replacement</h3>
+    <p>We replace faucets, toilets, sinks, and showers — done right the first time, without the headaches.</p>
+  </div>
+
+  <div class="service">
+    <img src="Screenshot_20250422_144708_Chrome.jpg" alt="Plumbing Remodels">
+    <h3>Remodels</h3>
+    <p>From bathrooms to kitchens, we handle full plumbing layouts and reroutes to match your design goals.</p>
+  </div>
+
+  <div class="service">
+    <img src="Screenshot_20250422_145336_Messages.jpg" alt="New Construction Plumbing">
+    <h3>New Construction</h3>
+    <p>Licensed, code-compliant installations for new builds — including DWV, water, gas, and recirculation loops.</p>
+  </div>
+
+</section>
+
+<a href="appointment.html" class="book-now">Book Now</a>
 
 <footer>
-  &copy; 2025 Superior Plumbing Solutions, LLC<br>
-  Licensed, Bonded & Insured — South Carolina License # RBP44530
+  &copy; 2025 Superior Plumbing Solutions LLC — Family Owned & Operated — Charleston Tri-County Area
 </footer>
 
 <script>
